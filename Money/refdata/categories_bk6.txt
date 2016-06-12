@@ -1,0 +1,187 @@
+1,Income,Paul's Salary,SALARY%
+1,Income,Paul's Salary,RBS SALARY%,BAC
+1,Income,Paul's Salary,RBS Sharesave taken from salary%
+1,Income,Maureen's Salary,CITY OF EDINBURGH%
+1,Income,Maureen's Salary,C E %
+1,Income,Maureen's Salary,CITY EDIN-PAYROLL INBOUND %
+1,Income,SQA,SCOTTISH QUAL. AUT%
+1,Income,Disability Allowance,PE153158C DWP DLA%,BAC
+1,Income,Child Benefit,%-CHB%,BAC
+1,Income,Bank Interest,,INT
+1,Income,Bank Interest,Interest %
+1,Income,RBS Rewards,MYREWARDS%,BAC
+1,Income,Tax Rebate,HMRC SA%,BAC
+2,Outgoings,TV Licence,TV LICENCE%
+2,Outgoings,TV/Phone/Broadband,VIRGIN MEDIA PYMTS%
+2,Outgoings,TV/Phone/Broadband,TELEWEST%
+2,Outgoings,Mortgage,RBS MORTGAGES%
+2,Outgoings,Mortgage,FIRST ACTIVE%
+2,Outgoings,Mortgage,%X18527651%
+2,Outgoings,Mortgage,MTG%
+2,Outgoings,Council Tax,EDINBURGH COUNCIL%
+2,Outgoings,Electricity/Gas,SCOTTISHPOWER%
+2,Outgoings,Electricity/Gas,NPOWER%
+2,Outgoings,Electricity/Gas,%SCOT POWER%
+2,Outgoings,Mobile Phone,VIRGIN MOBILE%
+2,Outgoings,Mobile Phone,T-MOBILE%
+2,Outgoings,Mobile Phone,VODAFONE%
+2,Outgoings,Mobile Phone,ORANGE%
+2,Outgoings,Mobile Phone,O2%
+2,Outgoings,Mobile Phone,MOBILE PHONE%
+2,Outgoings,Child Care,KIDZ%
+2,Outgoings,Child Care,DUDDINGSTON A/S CL%
+2,Outgoings,Heriots,GEORGE HERIOTS%
+2,Outgoings,Heriots,G HERIOT S TRUST%
+2,Outgoings,EIS,EIS%
+2,Outgoings,EIS,EDUC INST OF SCOT%
+2,Outgoings,Dentist,PRACTICE PLAN%
+2,Outgoings,Dentist,CRAIGENTINNY DENTAL%
+2,Outgoings,Life Insurance,LEGAL AND GEN%
+2,Outgoings,Life Insurance,AVIVA LIFE%
+2,Outgoings,Life Insurance,%CAVENDISHON%
+2,Outgoings,House Insurance,DIRECT LINE INS
+2,Outgoings,House Insurance,"DIRECT LINE INS , I"%
+2,Outgoings,House Insurance,ALLIANZ%
+2,Outgoings,House Insurance,WWW POST OFFICE INS%,MCC
+2,Outgoings,Utilities Insurance,%BRITISH GAS SERV%
+2,Outgoings,Utilities Insurance,%SCOTTISH GAS SERV%
+2,Outgoings,Utilities Insurance,%BGS HOMECARE%
+2,Outgoings,AA,AA MEMBERSHIP%
+2,Outgoings,Car Insurance,%D/LINE INS (RPYMT)%
+2,Outgoings,Car Insurance,"%DIRECT LINE INS , 0"%
+2,Outgoings,Road Tax,%DVLA%
+2,Outgoings,Road Tax,%ROAD TAX%
+2,Outgoings,Car Loan,CB PERSONAL%
+2,Outgoings,TV Subscriptions,%NETFLIX%
+2,Outgoings,TV Subscriptions,%NOWTV%
+2,Outgoings,Car Maintenance,%MOTORS%
+2,Outgoings,Car Maintenance,%MACKINNON MOTOR%
+2,Outgoings,Osteopath,%OSTEOPAT%
+2,Outgoings,Bank Charges,,CHG
+2,Outgoings,Bank Charges,%LATE PAYMENT FEE%
+2,Outgoings,Credit Card Interest,%INTEREST%,MCC
+2,Outgoings,Credit Card Interest,%LATE PAYMENT%,MCC
+2,Outgoings,Golf Fees,%DUDDINGSTON GC%
+2,Outgoings,Golf Fees,%LIBERTON GOLF CLUB 000%
+2,Outgoings,Golf Fees,%FAIRWAY CREDIT%
+3,Spend,Groceries/Petrol/Cash,%TESCO%
+3,Spend,Groceries/Petrol/Cash,%MORRISON%
+3,Spend,Groceries/Petrol/Cash,%ASDA%
+3,Spend,Groceries/Petrol/Cash,%SAINSBURYS%
+3,Spend,Groceries/Petrol/Cash,%Shell%
+3,Spend,Groceries/Petrol/Cash,,C/L
+3,Spend,Groceries/Petrol/Cash,,CPT
+3,Spend,Miscellaneous,,CHQ
+3,Spend,Miscellaneous,,PAY
+3,Spend,Miscellaneous,,DEB
+3,Spend,Miscellaneous,WHICH LIMITED%
+3,Spend,Miscellaneous,POST OFFICE%
+3,Spend,Miscellaneous,PAYMENT 2 EGG CARD%
+3,Spend,Miscellaneous,ONE.TEL%
+3,Spend,Miscellaneous,LITTLE ESTELLE%,BAC
+3,Spend,Miscellaneous,HBOS CARD SERVICES%
+3,Spend,Miscellaneous,H3G%
+3,Spend,Miscellaneous,G MACKINLAY%,BAC
+3,Spend,Miscellaneous,DEPOSIT FOR LISB%
+3,Spend,Miscellaneous,BRITGAS VAT REFUND%,BAC
+3,Spend,Miscellaneous,RBS MASTERCARD%
+3,Spend,Miscellaneous,%GAVIN - POOL%
+3,Spend,Miscellaneous,%EMMA ASH%
+3,Spend,Miscellaneous,%LODGE 2012%
+3,Spend,Miscellaneous,%STEVEN HIBBERT%
+3,Spend,Miscellaneous,%JUST LAPTOPS%
+3,Spend,Miscellaneous,%NATIONAL GALLERIES%
+3,Spend,Miscellaneous,DEBIT CARD%
+3,Spend,Miscellaneous,NATIONAL TRUST SCO%
+3,Spend,Miscellaneous,Direct Debit %
+3,Spend,Miscellaneous,STANDING ORDER %
+3,Spend,Miscellaneous,BOB FARQUHARSON %
+3,Spend,Miscellaneous,SHEILA KEITH%
+3,Spend,Miscellaneous,%EDINBURGH POOL%
+3,Spend,Miscellaneous,GROUPON%
+3,Spend,Miscellaneous,BHS PLC EDINBURGH%
+3,Spend,Miscellaneous,CALL REF.NO. 1489%
+3,Spend,Miscellaneous,NORTH BRITISH TRUST HOT%
+3,Spend,Miscellaneous,ARGOS%
+3,Spend,Miscellaneous,M & S%
+3,Spend,Miscellaneous,VUE%
+3,Spend,Miscellaneous,AMAZON%
+3,Spend,Miscellaneous,%HOTEL%
+3,Spend,Miscellaneous,%SKYLARK%
+3,Spend,Miscellaneous,%BONOFUL%
+3,Spend,Miscellaneous,EMPARK%
+3,Spend,Miscellaneous,P C WORLD%
+3,Spend,Miscellaneous,%MIDYOKEN%
+3,Spend,Miscellaneous,%TAXI%
+3,Spend,Miscellaneous,%WWW.SUPERLO%
+3,Spend,Miscellaneous,%LIBERTON GOLF CLUB%EBURGH%
+3,Spend,Miscellaneous,%ALLIANZ%TICKETMASTER%
+3,Spend,Miscellaneous,%9075%TICKETMASTER UK%
+3,Spend,Miscellaneous,%TICKETMASTER.CO.UK%
+3,Spend,Miscellaneous,%CAYGILL%
+3,Spend,Miscellaneous,%CARRBRIDGE GOLF%
+3,Spend,Miscellaneous,%BALLINDALLOCH%
+3,Spend,Miscellaneous,%SHEEP HEID%
+3,Spend,Miscellaneous,%THORNTONS%
+3,Spend,Miscellaneous,%BODY SHOP%
+3,Spend,Miscellaneous,%MARKS&SPENCER%
+3,Spend,Miscellaneous,%PANCHO VILLAS%
+3,Spend,Miscellaneous,%KINROSS MWSA%
+3,Spend,Miscellaneous,%KINROSS COSTA%
+3,Spend,Miscellaneous,%PLAYSTATIONNETWORK%
+3,Spend,Miscellaneous,%PERKS-GIFTCA%
+3,Spend,Miscellaneous,%CLUBHOUSE%
+3,Spend,Miscellaneous,%SALTIRE%
+3,Spend,Miscellaneous,%HERIOT WATT%
+3,Spend,Miscellaneous,%EYE MOUTH%
+3,Spend,Miscellaneous,%WAGAMAMA%
+3,Spend,Miscellaneous,%H SAMUEL%
+3,Spend,Miscellaneous,%NEXT%EDINBURGH%
+3,Spend,Miscellaneous,%FAT FACE%
+3,Spend,Miscellaneous,%NEW LOOK%
+3,Spend,Miscellaneous,%CURRYS%
+3,Spend,Miscellaneous,GAP%
+3,Spend,Miscellaneous,%DUDDINGSTON GOLF%
+3,Spend,Miscellaneous,%SCOTMID%
+3,Spend,Miscellaneous,%HIRSEL%
+3,Spend,Miscellaneous,%EDZELL%
+3,Spend,Miscellaneous,%BRSGOLFECOM%
+3,Spend,Miscellaneous,%PAYPAL%*AFO%
+3,Spend,Miscellaneous,%PAYPAL%*ME%
+3,Spend,Miscellaneous,%PAYPAL%4029357733%
+3,Spend,Miscellaneous,TONY MACARONI%
+3,Spend,Miscellaneous,OUTFIT EDINBURGH%
+3,Spend,Miscellaneous,W H SMITH%
+3,Spend,Miscellaneous,%AMAZON%,MCC
+3,Spend,Miscellaneous,%Amazon%,MCC
+3,Spend,Miscellaneous,%PLAYSTATION%,MCC
+3,Spend,Miscellaneous,%RIVER ISLAND%,MCC
+3,Spend,Miscellaneous,%BOOTS%,MCC
+3,Spend,Miscellaneous,%NEXT%EDINBURGH%,MCC
+3,Spend,Miscellaneous,%VISTAPR%,MCC
+3,Spend,Miscellaneous,%SPORTSDIRECT%,MCC
+3,Spend,Miscellaneous,%GAME RETAIL%,MCC
+3,Spend,Miscellaneous,%PAYPAL%,MCC
+3,Spend,Miscellaneous,%DEBENHAMS%,MCC
+3,Spend,Miscellaneous,%5PM%,MCC
+3,Spend,Miscellaneous,%TEEOFFTIMES%,MCC
+3,Spend,Miscellaneous,%TRENITALIA%,MCC
+3,Spend,Miscellaneous,%TICKETMASTER%,MCC
+3,Spend,Miscellaneous,%NON-STERLING%,MCC
+3,Spend,Miscellaneous,%USCUSTOMS%,MCC
+3,Spend,Miscellaneous,%HM PASSPORT OFFICE%,MCC
+3,Spend,Groceries/Petrol/Cash,%TESCO%,MCC
+3,Spend,Groceries/Petrol/Cash,%ASDA%,MCC
+3,Spend,Groceries/Petrol/Cash,%MORRISONS%,MCC
+4,Savings,Savings,%FIDELITY%
+4,Savings,Savings,ABERDEEN SUBS%
+4,Savings,Savings,FASL GEN CLT%
+4,Savings,Savings,RBS Sharesave%
+4,Savings,Savings,SLBS SAVINGS%,BAC
+4,Savings,Savings,SLBS SAVINGS%,BGC
+5,Balance,Mortgage,Mortgage Balance
+5,Balance,Ross IOU,Ross IOU
+5,Balance,Paul IOU,Paul IOU
+5,Balance,Car Loan,Car Loan
+5,Balance,RBS Sharesave,RBS Sharesave
+5,Balance,Fidelity ISA,Fidelity ISA

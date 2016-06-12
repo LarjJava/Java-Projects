@@ -1,0 +1,93 @@
+Income,Paul's Salary,SALARY%
+Income,Maureen's Salary,CITY OF EDINBURGH%
+Income,Maureen's Salary,C E %
+Income,Maureen's Salary,CITY EDIN-PAYROLL INBOUND %
+Income,SQA,SCOTTISH QUAL. AUT%
+Income,Disability Allowance,PE153158C DWP DLA%,BAC
+Income,Child Benefit,%-CHB%,BAC
+Income,Bank Interest,,INT
+Income,Bank Interest,Interest %
+Bills,TV Licence,TV LICENCE%
+Bills,TV/Phone/Broadband,VIRGIN MEDIA PYMTS%
+Bills,TV/Phone/Broadband,TELEWEST%
+Bills,Mortgage,RBS MORTGAGES%
+Bills,Mortgage,FIRST ACTIVE%
+Bills,Mortgage,%X18527651%
+Bills,Council Tax,EDINBURGH COUNCIL%
+Bills,Electricity/Gas,SCOTTISHPOWER%
+Bills,Electricity/Gas,NPOWER%
+Bills,Electricity/Gas,%SCOT POWER%
+Bills,Mobile Phone,VIRGIN MOBILE%
+Bills,Mobile Phone,T-MOBILE%
+Bills,Mobile Phone,VODAFONE%
+Bills,Mobile Phone,ORANGE%
+Bills,Mobile Phone,O2%
+Bills,Mobile Phone,MOBILE PHONE%
+Bills,Child Care,KIDZ%
+Bills,Heriots,GEORGE HERIOTS%
+Bills,Heriots,G HERIOT S TRUST%
+Bills,EIS,EIS%
+Bills,EIS,EDUC INST OF SCOT%
+Health,Dentist,PRACTICE PLAN%
+Health,Osteopath,%OSTEOPAT%
+Childcare,Childcare,DUDDINGSTON A/S CL%
+Insurance,Life Insurance,LEGAL AND GEN%
+Insurance,House Insurance,DIRECT LINE INS%
+Insurance,House Insurance,ALLIANZ%
+Insurance,Boiler/Central Heating,%BRITISH GAS SERV%
+Insurance,Boiler/Central Heating,%SCOTTISH GAS SERV%
+Insurance,Boiler/Central Heating,%BGS HOMECARE%
+Insurance,AA,AA MEMBERSHIP%
+Car,Car Insurance,%D/LINE INS (RPYMT)%
+Car,Road Tax,%DVLA%
+Car,Road Tax,%ROAD TAX%
+Loans,Car Loan,CB PERSONAL%
+Entertainment,TV Subscriptions,%NETFLIX%
+Entertainment,TV Subscriptions,%NOWTV%
+Savings,Savings,%FIDELITY%
+Savings,Savings,ABERDEEN SUBS%
+Savings,Savings,FASL GEN CLT%
+Savings,Savings,SLBS SAVINGS%,BAC
+Bank Charges,Bank Charges,,CHG
+Discretionary,Groceries/Petrol/Cash,%TESCO%
+Discretionary,Groceries/Petrol/Cash,%MORRISONS%
+Discretionary,Groceries/Petrol/Cash,%ASDA%
+Discretionary,Groceries/Petrol/Cash,%SAINSBURYS%
+Discretionary,Groceries/Petrol/Cash,%SHELL%
+Discretionary,Cashline,,C/L
+Discretionary,Cashline,,CPT
+Discretionary,Miscellaneous,,CHQ
+Discretionary,Miscellaneous,,PAY
+Discretionary,Miscellaneous,,DEB
+Discretionary,Miscellaneous,WHICH LIMITED%
+Discretionary,Miscellaneous,POST OFFICE%
+Discretionary,Miscellaneous,PAYMENT 2 EGG CARD%
+Discretionary,Miscellaneous,ONE.TEL%
+Discretionary,Miscellaneous,LITTLE ESTELLE%,BAC
+Discretionary,Miscellaneous,HBOS CARD SERVICES%
+Discretionary,Miscellaneous,H3G%
+Discretionary,Miscellaneous,G MACKINLAY%,BAC
+Discretionary,Miscellaneous,DEPOSIT FOR LISB%,BAC
+Discretionary,Miscellaneous,BRITGAS VAT REFUND%,BAC
+Discretionary,Miscellaneous,RBS MASTERCARD%
+Discretionary,Miscellaneous,%DUDDINGSTON GC%
+Discretionary,Miscellaneous,%GAVIN - POOL%
+Discretionary,Miscellaneous,%EMMA ASH%
+Discretionary,Miscellaneous,%LODGE 2012%
+Discretionary,Miscellaneous,%STEVEN HIBBERT%
+Discretionary,Miscellaneous,%JUST LAPTOPS%
+Discretionary,Miscellaneous,%NATIONAL GALLERIES%
+Discretionary,Miscellaneous,LIBERTON%
+Discretionary,Miscellaneous,FAIRWAY CREDIT%
+Discretionary,Miscellaneous,DEBIT CARD%
+Discretionary,Miscellaneous,BOS CREDIT CARD%
+Discretionary,Miscellaneous,BOS VISA%
+Discretionary,Miscellaneous,NATIONAL TRUST SCO%
+Discretionary,Miscellaneous,Direct Debit %
+Discretionary,Miscellaneous,STANDING ORDER %
+Discretionary,Miscellaneous,BOB FARQUHARSON %
+Discretionary,Miscellaneous,MAUREEN CC %
+Discretionary,Miscellaneous,STANDARD MASTERCAR%
+Discretionary,Credit Card Payment,BANK OF SCOTLAND M%
+Discretionary,Miscellaneous,SHEILA KEITH%
+Credit Card,Maureen's Credit Card,,MCC

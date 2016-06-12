@@ -1,0 +1,115 @@
+1,Income,Paul's Salary,SALARY%
+1,Income,Maureen's Salary,CITY OF EDINBURGH%
+1,Income,Maureen's Salary,C E %
+1,Income,Maureen's Salary,CITY EDIN-PAYROLL INBOUND %
+1,Income,SQA,SCOTTISH QUAL. AUT%
+1,Income,Disability Allowance,PE153158C DWP DLA%,BAC
+1,Income,Child Benefit,%-CHB%,BAC
+1,Income,Bank Interest,,INT
+1,Income,Bank Interest,Interest %
+1,Income,RBS Rewards,MYREWARDS%,BAC
+2,Outgoings,TV Licence,TV LICENCE%
+2,Outgoings,TV/Phone/Broadband,VIRGIN MEDIA PYMTS%
+2,Outgoings,TV/Phone/Broadband,TELEWEST%
+2,Outgoings,Mortgage,RBS MORTGAGES%
+2,Outgoings,Mortgage,FIRST ACTIVE%
+2,Outgoings,Mortgage,%X18527651%
+2,Outgoings,Council Tax,EDINBURGH COUNCIL%
+2,Outgoings,Electricity/Gas,SCOTTISHPOWER%
+2,Outgoings,Electricity/Gas,NPOWER%
+2,Outgoings,Electricity/Gas,%SCOT POWER%
+2,Outgoings,Mobile Phone,VIRGIN MOBILE%
+2,Outgoings,Mobile Phone,T-MOBILE%
+2,Outgoings,Mobile Phone,VODAFONE%
+2,Outgoings,Mobile Phone,ORANGE%
+2,Outgoings,Mobile Phone,O2%
+2,Outgoings,Mobile Phone,MOBILE PHONE%
+2,Outgoings,Child Care,KIDZ%
+2,Outgoings,Child Care,DUDDINGSTON A/S CL%
+2,Outgoings,Heriots,GEORGE HERIOTS%
+2,Outgoings,Heriots,G HERIOT S TRUST%
+2,Outgoings,EIS,EIS%
+2,Outgoings,EIS,EDUC INST OF SCOT%
+2,Outgoings,Dentist,PRACTICE PLAN%
+2,Outgoings,Osteopath,%OSTEOPAT%
+2,Outgoings,Life Insurance,LEGAL AND GEN%
+2,Outgoings,House Insurance,DIRECT LINE INS
+2,Outgoings,House Insurance,"DIRECT LINE INS , I"%
+2,Outgoings,House Insurance,ALLIANZ%
+2,Outgoings,Utilities Insurance,%BRITISH GAS SERV%
+2,Outgoings,Utilities Insurance,%SCOTTISH GAS SERV%
+2,Outgoings,Utilities Insurance,%BGS HOMECARE%
+2,Outgoings,AA,AA MEMBERSHIP%
+2,Outgoings,Car Insurance,%D/LINE INS (RPYMT)%
+2,Outgoings,Car Insurance,"%DIRECT LINE INS , 0"%
+2,Outgoings,Road Tax,%DVLA%
+2,Outgoings,Road Tax,%ROAD TAX%
+2,Outgoings,Car Loan,CB PERSONAL%
+2,Outgoings,TV Subscriptions,%NETFLIX%
+2,Outgoings,TV Subscriptions,%NOWTV%
+2,Outgoings,Bank Charges,,CHG
+3,Spend,Groceries/Petrol/Cash,%TESCO%
+3,Spend,Groceries/Petrol/Cash,%MORRISON%
+3,Spend,Groceries/Petrol/Cash,%ASDA%
+3,Spend,Groceries/Petrol/Cash,%SAINSBURYS%
+3,Spend,Groceries/Petrol/Cash,%SHELL%
+3,Spend,Cashline,,C/L
+3,Spend,Cashline,,CPT
+3,Spend,Miscellaneous,,CHQ
+3,Spend,Miscellaneous,,PAY
+3,Spend,Miscellaneous,,DEB
+3,Spend,Miscellaneous,WHICH LIMITED%
+3,Spend,Miscellaneous,POST OFFICE%
+3,Spend,Miscellaneous,PAYMENT 2 EGG CARD%
+3,Spend,Miscellaneous,ONE.TEL%
+3,Spend,Miscellaneous,LITTLE ESTELLE%,BAC
+3,Spend,Miscellaneous,HBOS CARD SERVICES%
+3,Spend,Miscellaneous,H3G%
+3,Spend,Miscellaneous,G MACKINLAY%,BAC
+3,Spend,Miscellaneous,DEPOSIT FOR LISB%
+3,Spend,Miscellaneous,BRITGAS VAT REFUND%,BAC
+3,Spend,Miscellaneous,RBS MASTERCARD%
+3,Spend,Miscellaneous,%DUDDINGSTON GC%
+3,Spend,Miscellaneous,%GAVIN - POOL%
+3,Spend,Miscellaneous,%EMMA ASH%
+3,Spend,Miscellaneous,%LODGE 2012%
+3,Spend,Miscellaneous,%STEVEN HIBBERT%
+3,Spend,Miscellaneous,%JUST LAPTOPS%
+3,Spend,Miscellaneous,%NATIONAL GALLERIES%
+3,Spend,Miscellaneous,LIBERTON%
+3,Spend,Miscellaneous,FAIRWAY CREDIT%
+3,Spend,Miscellaneous,DEBIT CARD%
+3,Spend,Miscellaneous,NATIONAL TRUST SCO%
+3,Spend,Miscellaneous,Direct Debit %
+3,Spend,Miscellaneous,STANDING ORDER %
+3,Spend,Miscellaneous,BOB FARQUHARSON %
+3,Spend,Miscellaneous,SHEILA KEITH%
+4,Credit Card,Miscellaneous,%AMAZON%,MCC
+4,Credit Card,Miscellaneous,%Amazon%,MCC
+4,Credit Card,Miscellaneous,%PLAYSTATION%,MCC
+4,Credit Card,Miscellaneous,%RIVER ISLAND%,MCC
+4,Credit Card,Miscellaneous,%BOOTS%,MCC
+4,Credit Card,Miscellaneous,%NEXT EDINBURGH%,MCC
+4,Credit Card,Miscellaneous,%VISTAPR%,MCC
+4,Credit Card,Miscellaneous,%SPORTSDIRECT%,MCC
+4,Credit Card,Miscellaneous,%GAME RETAIL%,MCC
+4,Credit Card,Miscellaneous,%PAYPAL%,MCC
+4,Credit Card,Miscellaneous,%DEBENHAMS%,MCC
+4,Credit Card,Miscellaneous,%5PM%,MCC
+4,Credit Card,Miscellaneous,%TEEOFFTIMES%,MCC
+4,Credit Card,Miscellaneous,%TRENITALIA%,MCC
+4,Credit Card,Miscellaneous,%TICKETMASTER%,MCC
+4,Credit Card,Miscellaneous,%NON-STERLING%,MCC
+4,Credit Card,Miscellaneous,%USCUSTOMS%,MCC
+4,Credit Card,Miscellaneous,%HM PASSPORT OFFICE%,MCC
+4,Credit Card,Groceries/Petrol/Cash,%TESCO%,MCC
+4,Credit Card,Groceries/Petrol/Cash,%ASDA%,MCC
+4,Credit Card,Groceries/Petrol/Cash,%MORRISONS%,MCC
+4,Credit Card,Interest/Charges,%INTEREST%,MCC
+4,Credit Card,Interest/Charges,%LATE PAYMENT%,MCC
+5,Savings,Savings,%FIDELITY%
+5,Savings,Savings,ABERDEEN SUBS%
+5,Savings,Savings,FASL GEN CLT%
+5,Savings,Savings,SLBS SAVINGS%,BAC
+5,Savings,Savings,SLBS SAVINGS%,BGC
+6,Balance,Mortgage,Mortgage Balance

@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.5.0.v201506092134 Build &lt;@BUILD@></property>
+    <text-property name="title">All Account Balances</text-property>
+    <list-property name="userProperties">
+        <structure>
+            <property name="name">IncomeAndExpenditureDataCube.ALL_TRANSACTIONS_VIEW.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">IncomeAndExpenditureDataCube.ALL_TRANSACTIONS_VIEW.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+    </list-property>
+    <property name="IncomeAndExpenditureDataCube.ALL_TRANSACTIONS_VIEW.x">135</property>
+    <property name="IncomeAndExpenditureDataCube.ALL_TRANSACTIONS_VIEW.y">80</property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Money Data Source" id="25">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">org.apache.derby.jdbc.EmbeddedDriver</property>
+            <property name="odaURL">jdbc:derby:C:\Java\git\Java-Projects\Money\db\moneyDB</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="monthly_balances_view" id="26">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">ACCOUNT_ID</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">ACCOUNT_ID</text-property>
+                    <text-property name="heading">ACCOUNT_ID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ACCOUNT_TYPE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">ACCOUNT_TYPE</text-property>
+                    <text-property name="heading">ACCOUNT_TYPE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ACCOUNT_NAME</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">ACCOUNT_NAME</text-property>
+                    <text-property name="heading">ACCOUNT_NAME</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DATE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DATE</text-property>
+                    <text-property name="heading">DATE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">RBS_YEAR</property>
+                    <property name="alias">RBS_YEAR</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">RBS_YEAR</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">RBS_YEAR</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">RBS_MONTH</property>
+                    <property name="alias">RBS_MONTH</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">RBS_MONTH</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">RBS_MONTH</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">RBS_MONTHS_AGO</property>
+                    <property name="alias">RBS_MONTHS_AGO</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">RBS_MONTHS_AGO</text-property>
+                    <text-property name="heading">RBS_MONTHS_AGO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">RBS_MONTH_NAME</property>
+                    <property name="alias">RBS_MONTH_NAME</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">RBS_MONTH_NAME</text-property>
+                    <text-property name="heading">RBS_MONTH_NAME</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">BALANCE</property>
+                    <property name="alias">BALANCE</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">BALANCE</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">BALANCE</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">ACCOUNT_ID</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">ACCOUNT_TYPE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">ACCOUNT_NAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">DATE</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">RBS_YEAR</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">RBS_MONTH</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">RBS_MONTHS_AGO</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">RBS_MONTH_NAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">BALANCE</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Money Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">ACCOUNT_ID</property>
+                    <property name="nativeName">ACCOUNT_ID</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">ACCOUNT_TYPE</property>
+                    <property name="nativeName">ACCOUNT_TYPE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">ACCOUNT_NAME</property>
+                    <property name="nativeName">ACCOUNT_NAME</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">DATE</property>
+                    <property name="nativeName">DATE</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">RBS_YEAR</property>
+                    <property name="nativeName">RBS_YEAR</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">RBS_MONTH</property>
+                    <property name="nativeName">RBS_MONTH</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">RBS_MONTHS_AGO</property>
+                    <property name="nativeName">RBS_MONTHS_AGO</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">RBS_MONTH_NAME</property>
+                    <property name="nativeName">RBS_MONTH_NAME</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">BALANCE</property>
+                    <property name="nativeName">BALANCE</property>
+                    <property name="dataType">float</property>
+                    <property name="nativeDataType">8</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT *
+FROM monthly_balances_view
+WHERE rbs_year >= 2016
+AND account_id <> 15
+]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <cubes>
+        <tabular-cube name="MonthlyAccountBalancesDataCube" id="27">
+            <property name="dimensions">
+                <tabular-dimension name="RbsMonthsAgoGroup" id="119">
+                    <property name="defaultHierarchy">NewTabularHierarchy4</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy4" id="120">
+                            <property name="levels">
+                                <tabular-level name="RBS_MONTHS_AGO" id="121">
+                                    <property name="dataType">integer</property>
+                                    <property name="columnName">RBS_MONTHS_AGO</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+                <tabular-dimension name="RbsMonthNameGroup" id="226">
+                    <property name="defaultHierarchy">NewTabularHierarchy5</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy5" id="227">
+                            <property name="levels">
+                                <tabular-level name="RBS_MONTH_NAME" id="228">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">RBS_MONTH_NAME</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+                <tabular-dimension name="AccountNameGroup" id="385">
+                    <property name="defaultHierarchy">NewTabularHierarchy1</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy1" id="386">
+                            <property name="levels">
+                                <tabular-level name="ACCOUNT_NAME" id="387">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">ACCOUNT_NAME</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+                <tabular-dimension name="AccountTypeGroup" id="416">
+                    <property name="defaultHierarchy">NewTabularHierarchy</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy" id="417">
+                            <property name="levels">
+                                <tabular-level name="ACCOUNT_TYPE" id="418">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">ACCOUNT_TYPE</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+                <tabular-dimension name="AccountIdGroup" id="435">
+                    <property name="defaultHierarchy">NewTabularHierarchy2</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy2" id="436">
+                            <property name="levels">
+                                <tabular-level name="ACCOUNT_ID" id="437">
+                                    <property name="dataType">integer</property>
+                                    <property name="columnName">ACCOUNT_ID</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+            </property>
+            <property name="measureGroups">
+                <tabular-measure-group name="Summary Field" id="355">
+                    <property name="measures">
+                        <tabular-measure name="BALANCE" id="356">
+                            <expression name="measureExpression" type="javascript">dataSetRow["BALANCE"]</expression>
+                            <property name="dataType">float</property>
+                        </tabular-measure>
+                    </property>
+                </tabular-measure-group>
+            </property>
+            <property name="dataSet">monthly_balances_view</property>
+        </tabular-cube>
+    </cubes>
+    <styles>
+        <style name="report" id="351">
+            <property name="fontFamily">"Ebrima"</property>
+            <property name="fontSize">large</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">custom</property>
+            <property name="height">100in</property>
+            <property name="width">15in</property>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <extended-item extensionName="Crosstab" extensionVersion="3.7.0" id="357">
+            <property name="cube">MonthlyAccountBalancesDataCube</property>
+            <property name="measures">
+                <extended-item extensionName="MeasureView" id="393">
+                    <property name="measure">BALANCE</property>
+                    <property name="detail">
+                        <extended-item extensionName="AggregationCell" id="394">
+                            <property name="aggregationOnRow">AccountIdGroup/ACCOUNT_ID</property>
+                            <property name="aggregationOnColumn">RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                            <property name="width">2in</property>
+                            <property name="content">
+                                <data id="395">
+                                    <property name="fontSize">medium</property>
+                                    <structure name="numberFormat">
+                                        <property name="category">Currency</property>
+                                        <property name="pattern">£#,##0.00{RoundingMode=HALF_UP}</property>
+                                    </structure>
+                                    <property name="textAlign">right</property>
+                                    <property name="resultSetColumn">BALANCE_AccountIdGroup/ACCOUNT_ID_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                                    <list-property name="action">
+                                        <structure>
+                                            <property name="linkType">drill-through</property>
+                                            <property name="reportName">AccountStatement.rptdesign</property>
+                                            <property name="targetWindow">_self</property>
+                                            <property name="targetFileType">report-design</property>
+                                            <list-property name="paramBindings">
+                                                <structure>
+                                                    <property name="paramName">param_account_id</property>
+                                                    <simple-property-list name="expression">
+                                                        <value type="javascript">data["ACCOUNT_ID"]</value>
+                                                    </simple-property-list>
+                                                </structure>
+                                            </list-property>
+                                        </structure>
+                                    </list-property>
+                                </data>
+                            </property>
+                        </extended-item>
+                    </property>
+                    <property name="aggregations">
+                        <extended-item extensionName="AggregationCell" id="428">
+                            <property name="aggregationOnRow">AccountTypeGroup/ACCOUNT_TYPE</property>
+                            <property name="aggregationOnColumn">RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">thin</property>
+                            <property name="paddingBottom">15pt</property>
+                            <property name="height">0.5in</property>
+                            <property name="content">
+                                <data id="429">
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <structure name="numberFormat">
+                                        <property name="category">Currency</property>
+                                        <property name="pattern">£#,##0.00{RoundingMode=HALF_UP}</property>
+                                    </structure>
+                                    <property name="textAlign">right</property>
+                                    <property name="resultSetColumn">BALANCE_AccountTypeGroup/ACCOUNT_TYPE_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                                </data>
+                            </property>
+                        </extended-item>
+                        <extended-item extensionName="AggregationCell" id="432">
+                            <property name="aggregationOnColumn">RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">thin</property>
+                            <property name="content">
+                                <data id="433">
+                                    <property name="fontSize">x-large</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <structure name="numberFormat">
+                                        <property name="category">Currency</property>
+                                        <property name="pattern">£#,##0.00{RoundingMode=HALF_UP}</property>
+                                    </structure>
+                                    <property name="textAlign">right</property>
+                                    <property name="resultSetColumn">BALANCE_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                                </data>
+                            </property>
+                        </extended-item>
+                    </property>
+                    <property name="header">
+                        <extended-item extensionName="CrosstabCell" id="396">
+                            <property name="width">1.5in</property>
+                        </extended-item>
+                    </property>
+                </extended-item>
+            </property>
+            <property name="rows">
+                <extended-item extensionName="CrosstabView" id="359">
+                    <property name="grandTotal">
+                        <extended-item extensionName="CrosstabCell" id="431">
+                            <property name="content">
+                                <label id="434">
+                                    <property name="fontSize">x-large</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="textAlign">left</property>
+                                    <property name="width">3in</property>
+                                    <text-property name="text">Grand Total</text-property>
+                                </label>
+                            </property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">thin</property>
+                            <property name="width">2in</property>
+                        </extended-item>
+                    </property>
+                    <property name="views">
+                        <extended-item extensionName="DimensionView" id="419">
+                            <property name="dimension">AccountTypeGroup</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View3" id="420">
+                                    <property name="level">AccountTypeGroup/ACCOUNT_TYPE</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="421">
+                                            <property name="content">
+                                                <data name="ACCOUNT_TYPE" id="425">
+                                                    <property name="fontSize">x-large</property>
+                                                    <property name="paddingLeft">1pt</property>
+                                                    <property name="textAlign">left</property>
+                                                    <property name="width">1.5in</property>
+                                                    <property name="resultSetColumn">ACCOUNT_TYPE</property>
+                                                </data>
+                                            </property>
+                                            <property name="width">1.5in</property>
+                                        </extended-item>
+                                    </property>
+                                    <property name="aggregationHeader">
+                                        <extended-item extensionName="CrosstabCell" id="427">
+                                            <property name="content">
+                                                <data name="ACCOUNT_TYPE_TOTAL" id="430">
+                                                    <property name="borderBottomStyle">none</property>
+                                                    <property name="borderLeftStyle">none</property>
+                                                    <property name="borderRightStyle">none</property>
+                                                    <property name="borderTopStyle">none</property>
+                                                    <property name="textAlign">left</property>
+                                                    <property name="width">2in</property>
+                                                    <property name="resultSetColumn">ACCOUNT_TYPE_TOTAL</property>
+                                                </data>
+                                            </property>
+                                            <property name="borderTopStyle">solid</property>
+                                            <property name="borderTopWidth">thin</property>
+                                            <property name="paddingBottom">15pt</property>
+                                            <property name="width">2in</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                        <extended-item extensionName="DimensionView" id="388">
+                            <property name="dimension">AccountNameGroup</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View" id="389">
+                                    <property name="level">AccountNameGroup/ACCOUNT_NAME</property>
+                                    <property name="sort">
+                                        <sort-element>
+                                            <expression name="key" type="javascript">data["BALANCE_AccountNameGroup/ACCOUNT_NAME_RbsMonthsAgoGroup/RBS_MONTHS_AGO"]</expression>
+                                            <property name="direction">asc</property>
+                                            <property name="strength">-1</property>
+                                            <property name="member">
+                                                <member-value>
+                                                    <property name="value">1</property>
+                                                    <property name="level">RbsMonthsAgoGroup/RBS_MONTHS_AGO</property>
+                                                </member-value>
+                                            </property>
+                                        </sort-element>
+                                    </property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="390">
+                                            <property name="content">
+                                                <data name="ACCOUNT_NAME" id="391">
+                                                    <property name="fontSize">medium</property>
+                                                    <property name="fontWeight">normal</property>
+                                                    <property name="textAlign">left</property>
+                                                    <property name="width">2in</property>
+                                                    <property name="resultSetColumn">ACCOUNT_NAME</property>
+                                                </data>
+                                            </property>
+                                            <property name="width">2in</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                        <extended-item extensionName="DimensionView" id="462">
+                            <property name="dimension">AccountIdGroup</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View4" id="463">
+                                    <property name="level">AccountIdGroup/ACCOUNT_ID</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="464">
+                                            <property name="width">0.1875in</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                    </property>
+                    <property name="grandTotalLocation">after</property>
+                </extended-item>
+            </property>
+            <property name="columns">
+                <extended-item extensionName="CrosstabView" id="365">
+                    <property name="views">
+                        <extended-item extensionName="DimensionView" id="405">
+                            <property name="dimension">RbsMonthsAgoGroup</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View1" id="406">
+                                    <property name="level">RbsMonthsAgoGroup/RBS_MONTHS_AGO</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="407">
+                                            <property name="width">1.5in</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                        <extended-item extensionName="DimensionView" id="411">
+                            <property name="dimension">RbsMonthNameGroup</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View2" id="412">
+                                    <property name="level">RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="413">
+                                            <property name="content">
+                                                <data name="RBS_MONTH_NAME" id="415">
+                                                    <property name="fontSize">x-large</property>
+                                                    <property name="textAlign">right</property>
+                                                    <property name="width">1in</property>
+                                                    <property name="resultSetColumn">RBS_MONTH_NAME</property>
+                                                </data>
+                                            </property>
+                                            <property name="textAlign">right</property>
+                                            <property name="paddingBottom">15pt</property>
+                                            <property name="height">0.5in</property>
+                                            <property name="width">1.5in</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                    </property>
+                    <property name="grandTotalLocation">after</property>
+                </extended-item>
+            </property>
+            <property name="header">
+                <extended-item extensionName="CrosstabCell" id="424">
+                    <property name="width">1.5in</property>
+                </extended-item>
+                <extended-item extensionName="CrosstabCell" id="467"/>
+                <extended-item extensionName="CrosstabCell" id="408">
+                    <property name="width">2in</property>
+                </extended-item>
+                <extended-item extensionName="CrosstabCell" id="423">
+                    <property name="width">1.5in</property>
+                </extended-item>
+                <extended-item extensionName="CrosstabCell" id="466"/>
+                <extended-item extensionName="CrosstabCell" id="414">
+                    <property name="width">2in</property>
+                </extended-item>
+                <extended-item extensionName="CrosstabCell" id="422">
+                    <property name="width">1.5in</property>
+                </extended-item>
+                <extended-item extensionName="CrosstabCell" id="358">
+                    <property name="width">2in</property>
+                </extended-item>
+                <extended-item extensionName="CrosstabCell" id="465"/>
+            </property>
+            <property name="marginLeft">15pt</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">ACCOUNT_NAME</property>
+                    <expression name="expression">dimension["AccountNameGroup"]["ACCOUNT_NAME"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">BALANCE_AccountNameGroup/ACCOUNT_NAME</property>
+                    <expression name="expression">measure["BALANCE"]</expression>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>AccountNameGroup/ACCOUNT_NAME</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+                <structure>
+                    <property name="name">RBS_MONTHS_AGO</property>
+                    <expression name="expression">dimension["RbsMonthsAgoGroup"]["RBS_MONTHS_AGO"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">BALANCE_AccountNameGroup/ACCOUNT_NAME_RbsMonthsAgoGroup/RBS_MONTHS_AGO</property>
+                    <expression name="expression">measure["BALANCE"]</expression>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>AccountNameGroup/ACCOUNT_NAME</value>
+                        <value>RbsMonthsAgoGroup/RBS_MONTHS_AGO</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+                <structure>
+                    <property name="name">RBS_MONTH_NAME</property>
+                    <expression name="expression">dimension["RbsMonthNameGroup"]["RBS_MONTH_NAME"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">BALANCE_AccountNameGroup/ACCOUNT_NAME_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                    <expression name="expression">measure["BALANCE"]</expression>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>AccountNameGroup/ACCOUNT_NAME</value>
+                        <value>RbsMonthNameGroup/RBS_MONTH_NAME</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+                <structure>
+                    <property name="name">ACCOUNT_TYPE</property>
+                    <expression name="expression">dimension["AccountTypeGroup"]["ACCOUNT_TYPE"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">BALANCE_AccountTypeGroup/ACCOUNT_TYPE_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                    <expression name="expression">measure["BALANCE"]</expression>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>AccountTypeGroup/ACCOUNT_TYPE</value>
+                        <value>RbsMonthNameGroup/RBS_MONTH_NAME</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+                <structure>
+                    <property name="name">ACCOUNT_TYPE_TOTAL</property>
+                    <expression name="expression">dimension["AccountTypeGroup"]["ACCOUNT_TYPE"]+" TOTAL"</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">BALANCE_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                    <expression name="expression">measure["BALANCE"]</expression>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>RbsMonthNameGroup/RBS_MONTH_NAME</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+                <structure>
+                    <property name="name">ACCOUNT_ID</property>
+                    <expression name="expression">dimension["AccountIdGroup"]["ACCOUNT_ID"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">BALANCE_AccountIdGroup/ACCOUNT_ID_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                    <expression name="expression">measure["BALANCE"]</expression>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>AccountIdGroup/ACCOUNT_ID</value>
+                        <value>RbsMonthNameGroup/RBS_MONTH_NAME</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+            </list-property>
+        </extended-item>
+    </body>
+</report>

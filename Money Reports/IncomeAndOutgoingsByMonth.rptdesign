@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.5.0.v201506092134 Build &lt;@BUILD@></property>
+    <text-property name="title">Income &amp; Outgoings</text-property>
+    <list-property name="userProperties">
+        <structure>
+            <property name="name">IncomeAndExpenditureDataCube.ALL_TRANSACTIONS_VIEW.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">IncomeAndExpenditureDataCube.ALL_TRANSACTIONS_VIEW.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+    </list-property>
+    <property name="IncomeAndExpenditureDataCube.ALL_TRANSACTIONS_VIEW.x">135</property>
+    <property name="IncomeAndExpenditureDataCube.ALL_TRANSACTIONS_VIEW.y">80</property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Money Data Source" id="25">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">org.apache.derby.jdbc.EmbeddedDriver</property>
+            <property name="odaURL">jdbc:derby:C:\Java\git\Java-Projects\Money\db\moneyDB</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="ALL_TRANSACTIONS_VIEW" id="26">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">TRANSACTION_ID</property>
+                    <property name="alias">TRANSACTION_ID</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">TRANSACTION_ID</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">TRANSACTION_ID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">FILE_ID</property>
+                    <property name="alias">FILE_ID</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">FILE_ID</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">FILE_ID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">LINE_ID</property>
+                    <property name="alias">LINE_ID</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">LINE_ID</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">LINE_ID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ACCOUNT_ID</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">ACCOUNT_ID</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">ACCOUNT_ID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DATE</property>
+                    <property name="alias">DATE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DATE</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">DATE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">TYPE</property>
+                    <property name="alias">TYPE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">TYPE</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">TYPE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DESCRIPTION</property>
+                    <property name="alias">DESCRIPTION</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DESCRIPTION</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">DESCRIPTION</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">VALUE</property>
+                    <property name="alias">VALUE</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">VALUE</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">VALUE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">BALANCE</property>
+                    <property name="alias">BALANCE</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">BALANCE</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">BALANCE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CATEGORY_ID</property>
+                    <property name="alias">CATEGORY_ID</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">CATEGORY_ID</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">CATEGORY_ID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">BANK</property>
+                    <property name="alias">BANK</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">BANK</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">BANK</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">SORT_CODE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">SORT_CODE</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">SORT_CODE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ACCOUNT_NUMBER</property>
+                    <property name="alias">ACCOUNT_NUMBER</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">ACCOUNT_NUMBER</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">ACCOUNT_NUMBER</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ACCOUNT_TYPE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">ACCOUNT_TYPE</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">ACCOUNT_TYPE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ACCOUNT_NAME</property>
+                    <property name="alias">ACCOUNT_NAME</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">ACCOUNT_NAME</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">ACCOUNT_NAME</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CUSTOMER_NUMBER</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CUSTOMER_NUMBER</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">CUSTOMER_NUMBER</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CATEGORY_NAME</property>
+                    <property name="alias">CATEGORY_NAME</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CATEGORY_NAME</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">CATEGORY_NAME</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">SUB_CATEGORY_NAME</property>
+                    <property name="alias">SUB_CATEGORY_NAME</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">SUB_CATEGORY_NAME</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">SUB_CATEGORY_NAME</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">SORT_ORDER</property>
+                    <property name="alias">SORT_ORDER</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">SORT_ORDER</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">SORT_ORDER</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CAL_YEAR</property>
+                    <property name="alias">CAL_YEAR</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">CAL_YEAR</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">CAL_YEAR</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CAL_MONTH</property>
+                    <property name="alias">CAL_MONTH</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">CAL_MONTH</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">CAL_MONTH</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">RBS_YEAR</property>
+                    <property name="alias">RBS_YEAR</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">RBS_YEAR</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">RBS_YEAR</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">RBS_MONTH</property>
+                    <property name="alias">RBS_MONTH</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">RBS_MONTH</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">RBS_MONTH</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">RBS_MONTHS_AGO</property>
+                    <property name="alias">RBS_MONTHS_AGO</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">RBS_MONTHS_AGO</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">RBS_MONTHS_AGO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">RBS_MONTH_NAME</property>
+                    <property name="alias">RBS_MONTH_NAME</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">RBS_MONTH_NAME</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">RBS_MONTH_NAME</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">TRANSACTION_ID</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">FILE_ID</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">LINE_ID</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">ACCOUNT_ID</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">DATE</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">TYPE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">DESCRIPTION</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">VALUE</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">BALANCE</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">CATEGORY_ID</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">BANK</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">SORT_CODE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">ACCOUNT_NUMBER</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">ACCOUNT_TYPE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">ACCOUNT_NAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">CUSTOMER_NUMBER</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">CATEGORY_NAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">SUB_CATEGORY_NAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">SORT_ORDER</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">CAL_YEAR</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">CAL_MONTH</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">22</property>
+                        <property name="name">RBS_YEAR</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">23</property>
+                        <property name="name">RBS_MONTH</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">24</property>
+                        <property name="name">RBS_MONTHS_AGO</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">25</property>
+                        <property name="name">RBS_MONTH_NAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Money Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">TRANSACTION_ID</property>
+                    <property name="nativeName">TRANSACTION_ID</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">FILE_ID</property>
+                    <property name="nativeName">FILE_ID</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">LINE_ID</property>
+                    <property name="nativeName">LINE_ID</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">ACCOUNT_ID</property>
+                    <property name="nativeName">ACCOUNT_ID</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">DATE</property>
+                    <property name="nativeName">DATE</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">TYPE</property>
+                    <property name="nativeName">TYPE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">DESCRIPTION</property>
+                    <property name="nativeName">DESCRIPTION</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">VALUE</property>
+                    <property name="nativeName">VALUE</property>
+                    <property name="dataType">float</property>
+                    <property name="nativeDataType">8</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">BALANCE</property>
+                    <property name="nativeName">BALANCE</property>
+                    <property name="dataType">float</property>
+                    <property name="nativeDataType">8</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">CATEGORY_ID</property>
+                    <property name="nativeName">CATEGORY_ID</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">BANK</property>
+                    <property name="nativeName">BANK</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">SORT_CODE</property>
+                    <property name="nativeName">SORT_CODE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">ACCOUNT_NUMBER</property>
+                    <property name="nativeName">ACCOUNT_NUMBER</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">ACCOUNT_TYPE</property>
+                    <property name="nativeName">ACCOUNT_TYPE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">ACCOUNT_NAME</property>
+                    <property name="nativeName">ACCOUNT_NAME</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">CUSTOMER_NUMBER</property>
+                    <property name="nativeName">CUSTOMER_NUMBER</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">CATEGORY_NAME</property>
+                    <property name="nativeName">CATEGORY_NAME</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">SUB_CATEGORY_NAME</property>
+                    <property name="nativeName">SUB_CATEGORY_NAME</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">SORT_ORDER</property>
+                    <property name="nativeName">SORT_ORDER</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">20</property>
+                    <property name="name">CAL_YEAR</property>
+                    <property name="nativeName">CAL_YEAR</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">21</property>
+                    <property name="name">CAL_MONTH</property>
+                    <property name="nativeName">CAL_MONTH</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">22</property>
+                    <property name="name">RBS_YEAR</property>
+                    <property name="nativeName">RBS_YEAR</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">23</property>
+                    <property name="name">RBS_MONTH</property>
+                    <property name="nativeName">RBS_MONTH</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">24</property>
+                    <property name="name">RBS_MONTHS_AGO</property>
+                    <property name="nativeName">RBS_MONTHS_AGO</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">25</property>
+                    <property name="name">RBS_MONTH_NAME</property>
+                    <property name="nativeName">RBS_MONTH_NAME</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT *
+FROM all_transactions_view
+WHERE category_name IS NOT NULL
+AND rbs_months_ago <= 1000
+AND type <> 'BAL'
+AND category_name <> 'Savings']]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <cubes>
+        <tabular-cube name="IncomeAndExpenditureDataCube" id="27">
+            <property name="dimensions">
+                <tabular-dimension name="CategoryGroup" id="28">
+                    <property name="defaultHierarchy">NewTabularHierarchy</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy" id="29">
+                            <property name="levels">
+                                <tabular-level name="CATEGORY_NAME" id="30">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">CATEGORY_NAME</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+                <tabular-dimension name="RbsYearGroup" id="66">
+                    <property name="isTimeType">false</property>
+                    <property name="defaultHierarchy">NewTabularHierarchy2</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy2" id="67">
+                            <property name="levels">
+                                <tabular-level name="RBS_YEAR" id="69">
+                                    <property name="dataType">integer</property>
+                                    <property name="columnName">RBS_YEAR</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+                <tabular-dimension name="SubCategoryGroup" id="76">
+                    <property name="defaultHierarchy">NewTabularHierarchy3</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy3" id="77">
+                            <property name="levels">
+                                <tabular-level name="SUB_CATEGORY_NAME" id="78">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">SUB_CATEGORY_NAME</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+                <tabular-dimension name="RbsMonthsAgoGroup" id="119">
+                    <property name="defaultHierarchy">NewTabularHierarchy4</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy4" id="120">
+                            <property name="levels">
+                                <tabular-level name="RBS_MONTHS_AGO" id="121">
+                                    <property name="dataType">integer</property>
+                                    <property name="columnName">RBS_MONTHS_AGO</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+                <tabular-dimension name="SortOrderGroup" id="128">
+                    <property name="defaultHierarchy">NewTabularHierarchy1</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy1" id="129">
+                            <property name="levels">
+                                <tabular-level name="SORT_ORDER" id="130">
+                                    <property name="dataType">integer</property>
+                                    <property name="columnName">SORT_ORDER</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+                <tabular-dimension name="RbsMonthNameGroup" id="226">
+                    <property name="defaultHierarchy">NewTabularHierarchy5</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy5" id="227">
+                            <property name="levels">
+                                <tabular-level name="RBS_MONTH_NAME" id="228">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">RBS_MONTH_NAME</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+            </property>
+            <property name="measureGroups">
+                <tabular-measure-group name="Summary Field" id="31">
+                    <property name="measures">
+                        <tabular-measure name="VALUE" id="43">
+                            <property name="function">sum</property>
+                            <property name="isCalculated">false</property>
+                            <expression name="measureExpression" type="javascript">dataSetRow["VALUE"]</expression>
+                            <property name="dataType">float</property>
+                            <property name="isVisible">true</property>
+                        </tabular-measure>
+                        <tabular-measure name="POSITIVE_VALUE" id="259">
+                            <property name="isCalculated">true</property>
+                            <expression name="measureExpression" type="javascript">if (measure["VALUE"] &lt; 0) {&#13;
+	measure["VALUE"]*-1&#13;
+} else {&#13;
+	measure["VALUE"] }</expression>
+                            <property name="dataType">float</property>
+                            <property name="isVisible">true</property>
+                        </tabular-measure>
+                    </property>
+                </tabular-measure-group>
+            </property>
+            <property name="dataSet">ALL_TRANSACTIONS_VIEW</property>
+        </tabular-cube>
+    </cubes>
+    <styles>
+        <style name="report" id="351">
+            <property name="fontFamily">"Ebrima"</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">custom</property>
+            <property name="height">100in</property>
+            <property name="width">115in</property>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <extended-item extensionName="Crosstab" extensionVersion="3.7.0" id="4">
+            <property name="cube">IncomeAndExpenditureDataCube</property>
+            <property name="measures">
+                <extended-item extensionName="MeasureView" id="302">
+                    <property name="measure">POSITIVE_VALUE</property>
+                    <property name="detail">
+                        <extended-item extensionName="AggregationCell" id="303">
+                            <property name="aggregationOnRow">SubCategoryGroup/SUB_CATEGORY_NAME</property>
+                            <property name="aggregationOnColumn">RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                            <property name="width">0.1875in</property>
+                        </extended-item>
+                    </property>
+                    <property name="aggregations">
+                        <extended-item extensionName="AggregationCell" id="337">
+                            <property name="aggregationOnRow">CategoryGroup/CATEGORY_NAME</property>
+                            <property name="aggregationOnColumn">RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">thin</property>
+                            <property name="paddingBottom">15pt</property>
+                        </extended-item>
+                        <extended-item extensionName="AggregationCell" id="344">
+                            <property name="aggregationOnColumn">RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">thin</property>
+                            <property name="paddingBottom">15pt</property>
+                        </extended-item>
+                    </property>
+                    <property name="header">
+                        <extended-item extensionName="CrosstabCell" id="305"/>
+                    </property>
+                </extended-item>
+                <extended-item extensionName="MeasureView" id="315">
+                    <property name="measure">VALUE</property>
+                    <property name="detail">
+                        <extended-item extensionName="AggregationCell" id="316">
+                            <property name="aggregationOnRow">SubCategoryGroup/SUB_CATEGORY_NAME</property>
+                            <property name="aggregationOnColumn">RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                            <property name="textAlign">right</property>
+                            <property name="verticalAlign">top</property>
+                            <property name="canShrink">true</property>
+                            <property name="overflow">visible</property>
+                            <property name="width">0.6354166666666666in</property>
+                            <property name="content">
+                                <data id="317">
+                                    <structure name="numberFormat">
+                                        <property name="category">Currency</property>
+                                        <property name="pattern">£###0{RoundingMode=HALF_UP}</property>
+                                    </structure>
+                                    <property name="textAlign">right</property>
+                                    <property name="width">0.55in</property>
+                                    <property name="resultSetColumn">VALUE_SubCategoryGroup/SUB_CATEGORY_NAME_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                                    <list-property name="action">
+                                        <structure>
+                                            <property name="linkType">drill-through</property>
+                                            <property name="reportName">TransactionsInMonthForCategory.rptdesign</property>
+                                            <property name="targetWindow">_self</property>
+                                            <property name="targetFileType">report-design</property>
+                                            <list-property name="paramBindings">
+                                                <structure>
+                                                    <property name="paramName">param_rbs_months_ago</property>
+                                                    <simple-property-list name="expression">
+                                                        <value type="javascript">data["RBS_MONTHS_AGO"]</value>
+                                                    </simple-property-list>
+                                                </structure>
+                                                <structure>
+                                                    <property name="paramName">param_category_name</property>
+                                                    <simple-property-list name="expression">
+                                                        <value type="javascript">data["CATEGORY_NAME"]</value>
+                                                    </simple-property-list>
+                                                </structure>
+                                                <structure>
+                                                    <property name="paramName">param_sub_category_name</property>
+                                                    <simple-property-list name="expression">
+                                                        <value type="javascript">data["SUB_CATEGORY_NAME"]</value>
+                                                    </simple-property-list>
+                                                </structure>
+                                            </list-property>
+                                        </structure>
+                                    </list-property>
+                                </data>
+                            </property>
+                        </extended-item>
+                    </property>
+                    <property name="aggregations">
+                        <extended-item extensionName="AggregationCell" id="339">
+                            <property name="aggregationOnRow">CategoryGroup/CATEGORY_NAME</property>
+                            <property name="aggregationOnColumn">RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">right</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">thin</property>
+                            <property name="paddingBottom">15pt</property>
+                            <property name="width">0.635in</property>
+                            <property name="content">
+                                <data id="340">
+                                    <property name="backgroundAttachment">scroll</property>
+                                    <property name="backgroundPositionX">0%</property>
+                                    <property name="backgroundPositionY">0%</property>
+                                    <property name="backgroundRepeat">repeat</property>
+                                    <property name="fontSize">10pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">black</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <structure name="numberFormat">
+                                        <property name="category">Currency</property>
+                                        <property name="pattern">£###0{RoundingMode=HALF_UP}</property>
+                                    </structure>
+                                    <property name="textAlign">right</property>
+                                    <property name="letterSpacing">normal</property>
+                                    <property name="lineHeight">normal</property>
+                                    <property name="orphans">2</property>
+                                    <property name="textTransform">none</property>
+                                    <property name="widows">2</property>
+                                    <property name="wordSpacing">normal</property>
+                                    <property name="display">block</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="canShrink">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <property name="width">0.55in</property>
+                                    <property name="resultSetColumn">VALUE_CategoryGroup/CATEGORY_NAME_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                                </data>
+                            </property>
+                        </extended-item>
+                        <extended-item extensionName="AggregationCell" id="346">
+                            <property name="aggregationOnColumn">RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">right</property>
+                            <property name="verticalAlign">top</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">thin</property>
+                            <property name="paddingBottom">15pt</property>
+                            <property name="content">
+                                <data id="347">
+                                    <property name="backgroundAttachment">scroll</property>
+                                    <property name="backgroundPositionX">0%</property>
+                                    <property name="backgroundPositionY">0%</property>
+                                    <property name="backgroundRepeat">repeat</property>
+                                    <property name="fontSize">12pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">black</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <structure name="numberFormat">
+                                        <property name="category">Currency</property>
+                                        <property name="pattern">£###0{RoundingMode=HALF_UP}</property>
+                                    </structure>
+                                    <property name="textAlign">right</property>
+                                    <property name="letterSpacing">normal</property>
+                                    <property name="lineHeight">normal</property>
+                                    <property name="orphans">2</property>
+                                    <property name="textTransform">none</property>
+                                    <property name="whiteSpace">normal</property>
+                                    <property name="widows">2</property>
+                                    <property name="wordSpacing">normal</property>
+                                    <property name="display">block</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="canShrink">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <property name="width">0.5in</property>
+                                    <property name="resultSetColumn">VALUE_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                                </data>
+                            </property>
+                        </extended-item>
+                    </property>
+                    <property name="header">
+                        <extended-item extensionName="CrosstabCell" id="318"/>
+                    </property>
+                </extended-item>
+            </property>
+            <property name="rows">
+                <extended-item extensionName="CrosstabView" id="229">
+                    <property name="grandTotal">
+                        <extended-item extensionName="CrosstabCell" id="343">
+                            <property name="content">
+                                <label id="348">
+                                    <property name="backgroundAttachment">scroll</property>
+                                    <property name="backgroundPositionX">0%</property>
+                                    <property name="backgroundPositionY">0%</property>
+                                    <property name="backgroundRepeat">repeat</property>
+                                    <property name="fontSize">12pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="fontVariant">normal</property>
+                                    <property name="color">black</property>
+                                    <property name="textLineThrough">none</property>
+                                    <property name="textOverline">none</property>
+                                    <property name="textUnderline">none</property>
+                                    <property name="borderBottomColor">black</property>
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="borderBottomWidth">medium</property>
+                                    <property name="borderLeftColor">black</property>
+                                    <property name="borderLeftStyle">none</property>
+                                    <property name="borderLeftWidth">medium</property>
+                                    <property name="borderRightColor">black</property>
+                                    <property name="borderRightStyle">none</property>
+                                    <property name="borderRightWidth">medium</property>
+                                    <property name="borderTopColor">black</property>
+                                    <property name="borderTopStyle">none</property>
+                                    <property name="borderTopWidth">medium</property>
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginLeft">0pt</property>
+                                    <property name="marginBottom">0pt</property>
+                                    <property name="marginRight">0pt</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="paddingLeft">1pt</property>
+                                    <property name="paddingBottom">1pt</property>
+                                    <property name="paddingRight">1pt</property>
+                                    <property name="textAlign">left</property>
+                                    <property name="letterSpacing">normal</property>
+                                    <property name="lineHeight">normal</property>
+                                    <property name="orphans">2</property>
+                                    <property name="textTransform">none</property>
+                                    <property name="whiteSpace">normal</property>
+                                    <property name="widows">2</property>
+                                    <property name="wordSpacing">normal</property>
+                                    <property name="display">block</property>
+                                    <property name="pageBreakAfter">auto</property>
+                                    <property name="pageBreakBefore">auto</property>
+                                    <property name="pageBreakInside">auto</property>
+                                    <property name="showIfBlank">false</property>
+                                    <property name="canShrink">false</property>
+                                    <property name="overflow">hidden</property>
+                                    <text-property name="text">Grand Total</text-property>
+                                </label>
+                            </property>
+                            <property name="fontWeight">bold</property>
+                            <property name="verticalAlign">top</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">thin</property>
+                            <property name="paddingBottom">15pt</property>
+                        </extended-item>
+                    </property>
+                    <property name="views">
+                        <extended-item extensionName="DimensionView" id="328">
+                            <property name="dimension">SortOrderGroup</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View4" id="329">
+                                    <property name="level">SortOrderGroup/SORT_ORDER</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="330">
+                                            <property name="width">0.1875in</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                        <extended-item extensionName="DimensionView" id="320">
+                            <property name="dimension">CategoryGroup</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View3" id="321">
+                                    <property name="level">CategoryGroup/CATEGORY_NAME</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="322">
+                                            <property name="content">
+                                                <data name="CATEGORY_NAME" id="326">
+                                                    <property name="fontSize">12pt</property>
+                                                    <property name="textAlign">left</property>
+                                                    <property name="resultSetColumn">CATEGORY_NAME</property>
+                                                </data>
+                                            </property>
+                                            <property name="verticalAlign">top</property>
+                                            <property name="width">1.5in</property>
+                                        </extended-item>
+                                    </property>
+                                    <property name="aggregationHeader">
+                                        <extended-item extensionName="CrosstabCell" id="336">
+                                            <property name="content">
+                                                <data name="CATEGORY_NAME_TOTAL" id="342">
+                                                    <property name="backgroundAttachment">scroll</property>
+                                                    <property name="backgroundPositionX">0%</property>
+                                                    <property name="backgroundPositionY">0%</property>
+                                                    <property name="backgroundRepeat">repeat</property>
+                                                    <property name="fontSize">10pt</property>
+                                                    <property name="fontWeight">bold</property>
+                                                    <property name="fontStyle">normal</property>
+                                                    <property name="fontVariant">normal</property>
+                                                    <property name="color">black</property>
+                                                    <property name="textLineThrough">none</property>
+                                                    <property name="textOverline">none</property>
+                                                    <property name="textUnderline">none</property>
+                                                    <property name="borderBottomColor">black</property>
+                                                    <property name="borderBottomStyle">none</property>
+                                                    <property name="borderBottomWidth">medium</property>
+                                                    <property name="borderLeftColor">black</property>
+                                                    <property name="borderLeftStyle">none</property>
+                                                    <property name="borderLeftWidth">medium</property>
+                                                    <property name="borderRightColor">black</property>
+                                                    <property name="borderRightStyle">none</property>
+                                                    <property name="borderRightWidth">medium</property>
+                                                    <property name="borderTopColor">black</property>
+                                                    <property name="borderTopStyle">none</property>
+                                                    <property name="borderTopWidth">medium</property>
+                                                    <property name="marginTop">0pt</property>
+                                                    <property name="marginLeft">0pt</property>
+                                                    <property name="marginBottom">0pt</property>
+                                                    <property name="marginRight">0pt</property>
+                                                    <property name="paddingTop">1pt</property>
+                                                    <property name="paddingLeft">1pt</property>
+                                                    <property name="paddingBottom">1pt</property>
+                                                    <property name="paddingRight">1pt</property>
+                                                    <property name="textAlign">left</property>
+                                                    <property name="letterSpacing">normal</property>
+                                                    <property name="lineHeight">normal</property>
+                                                    <property name="orphans">2</property>
+                                                    <property name="textTransform">none</property>
+                                                    <property name="whiteSpace">normal</property>
+                                                    <property name="widows">2</property>
+                                                    <property name="wordSpacing">normal</property>
+                                                    <property name="display">block</property>
+                                                    <property name="pageBreakAfter">auto</property>
+                                                    <property name="pageBreakBefore">auto</property>
+                                                    <property name="pageBreakInside">auto</property>
+                                                    <property name="showIfBlank">false</property>
+                                                    <property name="canShrink">false</property>
+                                                    <property name="overflow">hidden</property>
+                                                    <property name="width">2in</property>
+                                                    <property name="resultSetColumn">CATEGORY_NAME_TOTAL</property>
+                                                </data>
+                                            </property>
+                                            <property name="fontWeight">bold</property>
+                                            <property name="borderTopStyle">solid</property>
+                                            <property name="borderTopWidth">thin</property>
+                                            <property name="paddingBottom">15pt</property>
+                                            <property name="width">1.5in</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                        <extended-item extensionName="DimensionView" id="247">
+                            <property name="dimension">SubCategoryGroup</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View" id="248">
+                                    <property name="level">SubCategoryGroup/SUB_CATEGORY_NAME</property>
+                                    <property name="sort">
+                                        <sort-element>
+                                            <expression name="key" type="javascript">data["POSITIVE_VALUE_SubCategoryGroup/SUB_CATEGORY_NAME_RbsMonthsAgoGroup/RBS_MONTHS_AGO"]</expression>
+                                            <property name="direction">desc</property>
+                                            <property name="strength">-1</property>
+                                            <property name="member">
+                                                <member-value>
+                                                    <property name="value">1</property>
+                                                    <property name="level">RbsMonthsAgoGroup/RBS_MONTHS_AGO</property>
+                                                </member-value>
+                                            </property>
+                                        </sort-element>
+                                    </property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="249">
+                                            <property name="content">
+                                                <data name="SUB_CATEGORY_NAME" id="250">
+                                                    <property name="fontWeight">normal</property>
+                                                    <property name="textAlign">left</property>
+                                                    <property name="width">2in</property>
+                                                    <property name="resultSetColumn">SUB_CATEGORY_NAME</property>
+                                                </data>
+                                            </property>
+                                            <property name="fontWeight">bold</property>
+                                            <property name="verticalAlign">top</property>
+                                            <property name="width">1.75in</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                    </property>
+                    <property name="grandTotalLocation">after</property>
+                </extended-item>
+            </property>
+            <property name="columns">
+                <extended-item extensionName="CrosstabView" id="235">
+                    <property name="views">
+                        <extended-item extensionName="DimensionView" id="277">
+                            <property name="dimension">RbsMonthsAgoGroup</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View2" id="278">
+                                    <property name="level">RbsMonthsAgoGroup/RBS_MONTHS_AGO</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="279">
+                                            <property name="width">0.5in</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                        <extended-item extensionName="DimensionView" id="309">
+                            <property name="dimension">RbsMonthNameGroup</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View1" id="310">
+                                    <property name="level">RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="311">
+                                            <property name="content">
+                                                <data name="RBS_MONTH_NAME" id="313">
+                                                    <property name="fontSize">10pt</property>
+                                                    <property name="paddingBottom">15pt</property>
+                                                    <property name="width">0.5in</property>
+                                                    <property name="resultSetColumn">RBS_MONTH_NAME</property>
+                                                </data>
+                                            </property>
+                                            <property name="textAlign">right</property>
+                                            <property name="width">0.5in</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                    </property>
+                    <property name="grandTotalLocation">after</property>
+                </extended-item>
+            </property>
+            <property name="header">
+                <extended-item extensionName="CrosstabCell" id="333"/>
+                <extended-item extensionName="CrosstabCell" id="325">
+                    <property name="width">1.5in</property>
+                </extended-item>
+                <extended-item extensionName="CrosstabCell" id="307">
+                    <property name="width">0.5in</property>
+                </extended-item>
+                <extended-item extensionName="CrosstabCell" id="332"/>
+                <extended-item extensionName="CrosstabCell" id="324">
+                    <property name="width">1.5in</property>
+                </extended-item>
+                <extended-item extensionName="CrosstabCell" id="312">
+                    <property name="width">1in</property>
+                </extended-item>
+                <extended-item extensionName="CrosstabCell" id="331"/>
+                <extended-item extensionName="CrosstabCell" id="323">
+                    <property name="width">1.5in</property>
+                </extended-item>
+                <extended-item extensionName="CrosstabCell" id="5">
+                    <property name="width">0.5in</property>
+                </extended-item>
+            </property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">SUB_CATEGORY_NAME</property>
+                    <expression name="expression">dimension["SubCategoryGroup"]["SUB_CATEGORY_NAME"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">RBS_MONTHS_AGO</property>
+                    <expression name="expression">dimension["RbsMonthsAgoGroup"]["RBS_MONTHS_AGO"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">POSITIVE_VALUE_SubCategoryGroup/SUB_CATEGORY_NAME_RbsMonthsAgoGroup/RBS_MONTHS_AGO</property>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>SubCategoryGroup/SUB_CATEGORY_NAME</value>
+                        <value>RbsMonthsAgoGroup/RBS_MONTHS_AGO</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">measure["POSITIVE_VALUE"]</expression>
+                        </structure>
+                    </list-property>
+                </structure>
+                <structure>
+                    <property name="name">RBS_MONTH_NAME</property>
+                    <expression name="expression">dimension["RbsMonthNameGroup"]["RBS_MONTH_NAME"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">POSITIVE_VALUE_SubCategoryGroup/SUB_CATEGORY_NAME_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                    <expression name="expression">measure["POSITIVE_VALUE"]</expression>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>SubCategoryGroup/SUB_CATEGORY_NAME</value>
+                        <value>RbsMonthNameGroup/RBS_MONTH_NAME</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+                <structure>
+                    <property name="name">VALUE_SubCategoryGroup/SUB_CATEGORY_NAME_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                    <expression name="expression">measure["VALUE"]</expression>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>SubCategoryGroup/SUB_CATEGORY_NAME</value>
+                        <value>RbsMonthNameGroup/RBS_MONTH_NAME</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+                <structure>
+                    <property name="name">CATEGORY_NAME</property>
+                    <expression name="expression">dimension["CategoryGroup"]["CATEGORY_NAME"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">SORT_ORDER</property>
+                    <expression name="expression">dimension["SortOrderGroup"]["SORT_ORDER"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">POSITIVE_VALUE_CategoryGroup/CATEGORY_NAME_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                    <expression name="expression">measure["POSITIVE_VALUE"]</expression>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>CategoryGroup/CATEGORY_NAME</value>
+                        <value>RbsMonthNameGroup/RBS_MONTH_NAME</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+                <structure>
+                    <property name="name">VALUE_CategoryGroup/CATEGORY_NAME_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                    <expression name="expression">measure["VALUE"]</expression>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>CategoryGroup/CATEGORY_NAME</value>
+                        <value>RbsMonthNameGroup/RBS_MONTH_NAME</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+                <structure>
+                    <property name="name">CATEGORY_NAME_TOTAL</property>
+                    <expression name="expression">dimension["CategoryGroup"]["CATEGORY_NAME"]+" TOTAL"</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">POSITIVE_VALUE_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                    <expression name="expression">measure["POSITIVE_VALUE"]</expression>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>RbsMonthNameGroup/RBS_MONTH_NAME</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+                <structure>
+                    <property name="name">VALUE_RbsMonthNameGroup/RBS_MONTH_NAME</property>
+                    <expression name="expression">measure["VALUE"]</expression>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>RbsMonthNameGroup/RBS_MONTH_NAME</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+            </list-property>
+        </extended-item>
+        <data id="352"/>
+    </body>
+</report>
