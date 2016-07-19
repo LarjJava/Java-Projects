@@ -11,6 +11,7 @@
 1,Income,Bank Interest,Interest %
 1,Income,RBS Rewards,MYREWARDS%,BAC
 1,Income,Tax Rebate,HMRC SA%,BAC
+1,Income,Miscellaneous,EDINBURGH PORTOBEL%,DEP
 2,Outgoings,TV Licence,TV LICENCE%
 2,Outgoings,TV/Phone/Broadband,VIRGIN MEDIA PYMTS%
 2,Outgoings,TV/Phone/Broadband,TELEWEST%
@@ -49,6 +50,7 @@
 2,Outgoings,AA,AA MEMBERSHIP%
 2,Outgoings,Car Insurance,%D/LINE INS (RPYMT)%
 2,Outgoings,Car Insurance,"%DIRECT LINE INS , 0"%
+2,Outgoings,Car Insurance,%ADMIRAL%
 2,Outgoings,Road Tax,%DVLA%
 2,Outgoings,Road Tax,%ROAD TAX%
 2,Outgoings,Car Loan,CB PERSONAL%
@@ -74,11 +76,14 @@
 3,Spend,Groceries/Petrol/Cash,,CPT
 3,Spend,Holiday,%THOMSON%084%
 3,Spend,Holiday,CARTRAWLER%
+3,Spend,Holiday,%CARHIREEXCESS%
+3,Spend,Holiday,%THOMSON AIRWAYS%
+3,Spend,Holiday,Holiday:%
+3,Spend,Holiday,%THOMAS COOK FE%
 3,Spend,Miscellaneous,,CHQ
 3,Spend,Miscellaneous,,PAY
 3,Spend,Miscellaneous,,DEB
 3,Spend,Miscellaneous,WHICH LIMITED%
-3,Spend,Miscellaneous,POST OFFICE%
 3,Spend,Miscellaneous,PAYMENT 2 EGG CARD%
 3,Spend,Miscellaneous,ONE.TEL%
 3,Spend,Miscellaneous,LITTLE ESTELLE%,BAC
@@ -158,6 +163,19 @@
 3,Spend,Miscellaneous,Reversal:%
 3,Spend,Miscellaneous,SPORTS SOCCER%
 3,Spend,Miscellaneous,SPOTIFY%
+3,Spend,Miscellaneous,%B AND Q%
+3,Spend,Miscellaneous,%CROWNE PLAZA%
+3,Spend,Miscellaneous,%LIFESTYLE EXPRESS%
+3,Spend,Miscellaneous,%5PM CO UK%
+3,Spend,Miscellaneous,%RINGGO%
+3,Spend,Miscellaneous,%TK MAXX%
+3,Spend,Miscellaneous,%VIVA MEXICO%
+3,Spend,Miscellaneous,%RIVER ISLAND%
+3,Spend,Miscellaneous,%WILD EARTH%
+3,Spend,Miscellaneous,%THE RANGE%
+3,Spend,Miscellaneous,%AUDIBLE%
+3,Spend,Miscellaneous,%POST OFFICE%
+3,Spend,Miscellaneous,%H&M%
 3,Spend,Miscellaneous,%AMAZON%,MCC
 3,Spend,Miscellaneous,%Amazon%,MCC
 3,Spend,Miscellaneous,%PLAYSTATION%,MCC

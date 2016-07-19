@@ -323,7 +323,7 @@ AND account_id <> 15
         <simple-master-page name="Simple MasterPage" id="2">
             <property name="type">custom</property>
             <property name="height">100in</property>
-            <property name="width">15in</property>
+            <property name="width">100in</property>
         </simple-master-page>
     </page-setup>
     <body>

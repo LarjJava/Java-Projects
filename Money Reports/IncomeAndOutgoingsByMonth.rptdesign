@@ -890,7 +890,7 @@ AND category_name <> 'Savings']]></xml-property>
                                     <property name="showIfBlank">false</property>
                                     <property name="canShrink">false</property>
                                     <property name="overflow">hidden</property>
-                                    <property name="width">0.5in</property>
+                                    <property name="width">0.55in</property>
                                     <property name="resultSetColumn">VALUE_RbsMonthNameGroup/RBS_MONTH_NAME</property>
                                 </data>
                             </property>
