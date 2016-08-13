@@ -667,6 +667,19 @@ where substr(date,4,1) not in ('0','1','2','3','4','5','6','7','8','9')
 
 cast(SUBSTR(date,7,4) || '-' || SUBSTR(date,4,2) || '-' || SUBSTR(date,1,2) as date)
 
+select * from monthly_balance_transactions
+select * from monthly_balances_view where account_id = 4
+
+SELECT account_id, rbs_year, rbs_month, MAX(transaction_id) transaction_id
+FROM all_transactions_view
+GROUP BY account_id, rbs_year, rbs_month
+
+select * from all_transactions_view where transaction_id = 198
+
+
+
+
+
 
 
 

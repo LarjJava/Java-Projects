@@ -1,6 +1,7 @@
 1,Income,Paul's Salary,SALARY%
 1,Income,Paul's Salary,RBS SALARY%,BAC
 1,Income,Paul's Salary,RBS Sharesave taken from salary%
+1,Income,Paul's Salary,RBS Pension taken from salary%
 1,Income,Maureen's Salary,CITY OF EDINBURGH%
 1,Income,Maureen's Salary,C E %
 1,Income,Maureen's Salary,CITY EDIN-PAYROLL INBOUND %
@@ -12,6 +13,7 @@
 1,Income,RBS Rewards,MYREWARDS%,BAC
 1,Income,Tax Rebate,HMRC SA%,BAC
 1,Income,Miscellaneous,EDINBURGH PORTOBEL%,DEP
+1,Income,Miscellaneous,Misc Income:%
 2,Outgoings,TV Licence,TV LICENCE%
 2,Outgoings,TV/Phone/Broadband,VIRGIN MEDIA PYMTS%
 2,Outgoings,TV/Phone/Broadband,TELEWEST%
@@ -29,6 +31,7 @@
 2,Outgoings,Mobile Phone,ORANGE%
 2,Outgoings,Mobile Phone,O2%
 2,Outgoings,Mobile Phone,MOBILE PHONE%
+2,Outgoings,Mobile Phone,EE%T-MOBILE%
 2,Outgoings,Child Care,KIDZ%
 2,Outgoings,Child Care,DUDDINGSTON A/S CL%
 2,Outgoings,Heriots,GEORGE HERIOTS%
@@ -72,6 +75,8 @@
 3,Spend,Groceries/Petrol/Cash,%ASDA%
 3,Spend,Groceries/Petrol/Cash,%SAINSBURYS%
 3,Spend,Groceries/Petrol/Cash,%Shell%
+3,Spend,Groceries/Petrol/Cash,%LIDL%
+3,Spend,Groceries/Petrol/Cash,%SERVICE STATI%
 3,Spend,Groceries/Petrol/Cash,,C/L
 3,Spend,Groceries/Petrol/Cash,,CPT
 3,Spend,Holiday,%THOMSON%084%
@@ -80,6 +85,12 @@
 3,Spend,Holiday,%THOMSON AIRWAYS%
 3,Spend,Holiday,Holiday:%
 3,Spend,Holiday,%THOMAS COOK FE%
+3,Spend,Holiday,%EASYJET%
+3,Spend,Holiday,%RYANAIR%
+3,Spend,Holiday,%HOTEL%
+3,Spend,Holiday,%CARRENTAL%
+3,Spend,Holiday,%ITISON%
+3,Spend,Holiday,ROCK INSURANCE%
 3,Spend,Miscellaneous,,CHQ
 3,Spend,Miscellaneous,,PAY
 3,Spend,Miscellaneous,,DEB
@@ -114,7 +125,6 @@
 3,Spend,Miscellaneous,M & S%
 3,Spend,Miscellaneous,VUE%
 3,Spend,Miscellaneous,AMAZON%
-3,Spend,Miscellaneous,%HOTEL%
 3,Spend,Miscellaneous,%SKYLARK%
 3,Spend,Miscellaneous,%BONOFUL%
 3,Spend,Miscellaneous,EMPARK%
@@ -132,7 +142,6 @@
 3,Spend,Miscellaneous,%SHEEP HEID%
 3,Spend,Miscellaneous,%THORNTONS%
 3,Spend,Miscellaneous,%BODY SHOP%
-3,Spend,Miscellaneous,%MARKS&SPENCER%
 3,Spend,Miscellaneous,%PANCHO VILLAS%
 3,Spend,Miscellaneous,%KINROSS MWSA%
 3,Spend,Miscellaneous,%KINROSS COSTA%
@@ -155,12 +164,16 @@
 3,Spend,Miscellaneous,%EDZELL%
 3,Spend,Miscellaneous,%BRSGOLFECOM%
 3,Spend,Miscellaneous,%PAYPAL%*AFO%
-3,Spend,Miscellaneous,%PAYPAL%*ME%
+3,Spend,Miscellaneous,%PAYPAL%*ME %
 3,Spend,Miscellaneous,%PAYPAL%4029357733%
+3,Spend,Miscellaneous,%PAYPAL%UNIBOS%
+3,Spend,Miscellaneous,%PAYPAL%PEAKROSETTE%
+3,Spend,Miscellaneous,%PAYPAL%HAVENGARDEN%
+3,Spend,Miscellaneous,%PAYPAL%GILLESPIES%
 3,Spend,Miscellaneous,TONY MACARONI%
 3,Spend,Miscellaneous,OUTFIT EDINBURGH%
 3,Spend,Miscellaneous,W H SMITH%
-3,Spend,Miscellaneous,Reversal:%
+3,Spend,Miscellaneous,Miscellaneous:%
 3,Spend,Miscellaneous,SPORTS SOCCER%
 3,Spend,Miscellaneous,SPOTIFY%
 3,Spend,Miscellaneous,%B AND Q%
@@ -176,6 +189,8 @@
 3,Spend,Miscellaneous,%AUDIBLE%
 3,Spend,Miscellaneous,%POST OFFICE%
 3,Spend,Miscellaneous,%H&M%
+3,Spend,Miscellaneous,%FORESTER%
+3,Spend,Miscellaneous,%MARKS%SPENCER%
 3,Spend,Miscellaneous,%AMAZON%,MCC
 3,Spend,Miscellaneous,%Amazon%,MCC
 3,Spend,Miscellaneous,%PLAYSTATION%,MCC
@@ -185,7 +200,6 @@
 3,Spend,Miscellaneous,%VISTAPR%,MCC
 3,Spend,Miscellaneous,%SPORTSDIRECT%,MCC
 3,Spend,Miscellaneous,%GAME RETAIL%,MCC
-3,Spend,Miscellaneous,%PAYPAL%,MCC
 3,Spend,Miscellaneous,%DEBENHAMS%,MCC
 3,Spend,Miscellaneous,%5PM%,MCC
 3,Spend,Miscellaneous,%TEEOFFTIMES%,MCC
@@ -197,15 +211,16 @@
 3,Spend,Groceries/Petrol/Cash,%TESCO%,MCC
 3,Spend,Groceries/Petrol/Cash,%ASDA%,MCC
 3,Spend,Groceries/Petrol/Cash,%MORRISONS%,MCC
+3,Spend,Miscellaneous,%GULLYGARMS%,MCC
 4,Savings,Savings,%FIDELITY%
 4,Savings,Savings,ABERDEEN SUBS%
 4,Savings,Savings,FASL GEN CLT%
-4,Savings,Savings,RBS Sharesave from salary%
+4,Savings,Savings,RBS Sharesave Savings%
+4,Savings,Savings,RBS Pension Savings%
 4,Savings,Savings,SLBS SAVINGS%,BAC
 4,Savings,Savings,SLBS SAVINGS%,BGC
 5,Balance,Mortgage,Mortgage Balance
 5,Balance,Ross IOU,Ross IOU
 5,Balance,Paul IOU,Paul IOU
 5,Balance,Car Loan,Car Loan
-5,Balance,RBS Sharesave,RBS Sharesave
 5,Balance,Fidelity ISA,Fidelity ISA
