@@ -10,9 +10,12 @@
 1,Income,Child Benefit,%-CHB%,BAC
 1,Income,Bank Interest,,INT
 1,Income,Bank Interest,Interest %
+1,Income,Bank Interest,INTEREST%
 1,Income,RBS Rewards,MYREWARDS%,BAC
+1,Income,RBS Rewards,RBS Rewards%
 1,Income,Tax Rebate,HMRC SA%,BAC
 1,Income,Miscellaneous,EDINBURGH PORTOBEL%,DEP
+1,Income,Miscellaneous,831923
 1,Income,Miscellaneous,Misc Income:%
 2,Outgoings,TV Licence,TV LICENCE%
 2,Outgoings,TV/Phone/Broadband,VIRGIN MEDIA PYMTS%
@@ -32,6 +35,7 @@
 2,Outgoings,Mobile Phone,O2%
 2,Outgoings,Mobile Phone,MOBILE PHONE%
 2,Outgoings,Mobile Phone,EE%T-MOBILE%
+2,Outgoings,Mobile Phone,Mobile Phone:%
 2,Outgoings,Child Care,KIDZ%
 2,Outgoings,Child Care,DUDDINGSTON A/S CL%
 2,Outgoings,Heriots,GEORGE HERIOTS%
@@ -71,12 +75,13 @@
 2,Outgoings,Golf Fees,LIBERTON GOLF CLUB
 2,Outgoings,Golf Fees,%FAIRWAY CREDIT%
 3,Spend,Groceries/Petrol/Cash,%TESCO%
-3,Spend,Groceries/Petrol/Cash,%MORRISON%
+3,Spend,Groceries/Petrol/Cash,%MORRISO%
 3,Spend,Groceries/Petrol/Cash,%ASDA%
 3,Spend,Groceries/Petrol/Cash,%SAINSBURYS%
 3,Spend,Groceries/Petrol/Cash,%Shell%
 3,Spend,Groceries/Petrol/Cash,%LIDL%
 3,Spend,Groceries/Petrol/Cash,%SERVICE STATI%
+3,Spend,Groceries/Petrol/Cash,Groceries/Petrol/Cash:%
 3,Spend,Groceries/Petrol/Cash,,C/L
 3,Spend,Groceries/Petrol/Cash,,CPT
 3,Spend,Holiday,%THOMSON%084%
@@ -87,10 +92,13 @@
 3,Spend,Holiday,%THOMAS COOK FE%
 3,Spend,Holiday,%EASYJET%
 3,Spend,Holiday,%RYANAIR%
-3,Spend,Holiday,%HOTEL%
 3,Spend,Holiday,%CARRENTAL%
 3,Spend,Holiday,%ITISON%
 3,Spend,Holiday,ROCK INSURANCE%
+3,Spend,Home Improvements,%B AND Q%
+3,Spend,Home Improvements,Home Improvements:%
+3,Spend,Home Improvements,%MORNINGSIDE%BATHROOMS%
+3,Spend,Home Improvements,%SM ELECTRICAL%
 3,Spend,Miscellaneous,,CHQ
 3,Spend,Miscellaneous,,PAY
 3,Spend,Miscellaneous,,DEB
@@ -115,7 +123,7 @@
 3,Spend,Miscellaneous,Direct Debit %
 3,Spend,Miscellaneous,STANDING ORDER %
 3,Spend,Miscellaneous,BOB FARQUHARSON %
-3,Spend,Miscellaneous,SHEILA KEITH%
+3,Spend,Miscellaneous,S%KEITH%
 3,Spend,Miscellaneous,%EDINBURGH POOL%
 3,Spend,Miscellaneous,GROUPON%
 3,Spend,Miscellaneous,BHS PLC EDINBURGH%
@@ -170,13 +178,13 @@
 3,Spend,Miscellaneous,%PAYPAL%PEAKROSETTE%
 3,Spend,Miscellaneous,%PAYPAL%HAVENGARDEN%
 3,Spend,Miscellaneous,%PAYPAL%GILLESPIES%
+3,Spend,Miscellaneous,%PAYPAL%ESHOPING%
 3,Spend,Miscellaneous,TONY MACARONI%
 3,Spend,Miscellaneous,OUTFIT EDINBURGH%
 3,Spend,Miscellaneous,W H SMITH%
 3,Spend,Miscellaneous,Miscellaneous:%
 3,Spend,Miscellaneous,SPORTS SOCCER%
 3,Spend,Miscellaneous,SPOTIFY%
-3,Spend,Miscellaneous,%B AND Q%
 3,Spend,Miscellaneous,%CROWNE PLAZA%
 3,Spend,Miscellaneous,%LIFESTYLE EXPRESS%
 3,Spend,Miscellaneous,%5PM CO UK%
@@ -191,6 +199,18 @@
 3,Spend,Miscellaneous,%H&M%
 3,Spend,Miscellaneous,%FORESTER%
 3,Spend,Miscellaneous,%MARKS%SPENCER%
+3,Spend,Miscellaneous,CUDDIE BRAE%
+3,Spend,Miscellaneous,%HORSE AND HOUND%
+3,Spend,Miscellaneous,%HAWICK GOLF%
+3,Spend,Miscellaneous,%EDUCATION-CEC%
+3,Spend,Miscellaneous,%MOTHER INDIA%
+3,Spend,Miscellaneous,%KINGS ACRE GOLF%
+3,Spend,Miscellaneous,%HOTEL%
+3,Spend,Miscellaneous,%MILTON ROAD POST%
+3,Spend,Miscellaneous,%AL DENTE%
+3,Spend,Miscellaneous,%TEETIMES%
+3,Spend,Miscellaneous,%MEADOW BANK%
+3,Spend,Miscellaneous,HOME RETAIL GROUP%
 3,Spend,Miscellaneous,%AMAZON%,MCC
 3,Spend,Miscellaneous,%Amazon%,MCC
 3,Spend,Miscellaneous,%PLAYSTATION%,MCC

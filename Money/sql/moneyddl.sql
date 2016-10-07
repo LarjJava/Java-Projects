@@ -661,7 +661,7 @@ ORDER BY date, line_id DESC, file_id
 select * from all_transactions
 where account_id = 2
 
-
+select distinct(rbs_months_ago) from all_transactions_view
 
 where substr(date,4,1) not in ('0','1','2','3','4','5','6','7','8','9')
 
@@ -675,6 +675,8 @@ FROM all_transactions_view
 GROUP BY account_id, rbs_year, rbs_month
 
 select * from all_transactions_view where transaction_id = 198
+
+select * from TEXT_FILES_VARCHAR where account_id = '2' and date like '%2016'
 
 
 

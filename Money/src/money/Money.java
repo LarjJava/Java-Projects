@@ -719,9 +719,13 @@ public class Money
 			
 			String bosValue = null;
 			
-			if (!tableRow.get(7).equals(""))
+			if (!tableRow.get(7).equals("") && !tableRow.get(7).substring(0,1).equals("-"))
 			{
 				bosValue = "-"+tableRow.get(7);
+			}
+			else if (!tableRow.get(7).equals("") && tableRow.get(7).substring(0,1).equals("-"))
+			{
+				bosValue = tableRow.get(7);
 			}
 			else
 			{
@@ -1003,7 +1007,7 @@ public class Money
 							   + "account_number "
 							   + "FROM text_files_varchar "
 							   + "WHERE date NOT LIKE '%Date%' AND date <> '' "; // Ignore rows that are not real transactions
-		
+
 		Statement statement = null;
 		statement = dbConnection.createStatement();
 		statement.execute(insertStatement);
