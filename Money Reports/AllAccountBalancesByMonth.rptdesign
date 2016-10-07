@@ -18,6 +18,7 @@
     <property name="IncomeAndExpenditureDataCube.ALL_TRANSACTIONS_VIEW.y">80</property>
     <property name="units">in</property>
     <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">fixed layout</property>
     <property name="bidiLayoutOrientation">ltr</property>
     <property name="imageDPI">96</property>
     <data-sources>
@@ -322,8 +323,9 @@ AND account_id <> 15
     <page-setup>
         <simple-master-page name="Simple MasterPage" id="2">
             <property name="type">custom</property>
-            <property name="height">100in</property>
-            <property name="width">100in</property>
+            <property name="orientation">landscape</property>
+            <property name="height">210mm</property>
+            <property name="width">450mm</property>
         </simple-master-page>
     </page-setup>
     <body>
@@ -336,7 +338,7 @@ AND account_id <> 15
                         <extended-item extensionName="AggregationCell" id="394">
                             <property name="aggregationOnRow">AccountIdGroup/ACCOUNT_ID</property>
                             <property name="aggregationOnColumn">RbsMonthNameGroup/RBS_MONTH_NAME</property>
-                            <property name="width">2in</property>
+                            <property name="width">1.5in</property>
                             <property name="content">
                                 <data id="395">
                                     <property name="fontSize">medium</property>
@@ -396,7 +398,7 @@ AND account_id <> 15
                             <property name="borderTopWidth">thin</property>
                             <property name="content">
                                 <data id="433">
-                                    <property name="fontSize">x-large</property>
+                                    <property name="fontSize">large</property>
                                     <property name="fontWeight">bold</property>
                                     <property name="borderBottomStyle">none</property>
                                     <property name="borderLeftStyle">none</property>
@@ -562,7 +564,7 @@ AND account_id <> 15
                                                 <data name="RBS_MONTH_NAME" id="415">
                                                     <property name="fontSize">x-large</property>
                                                     <property name="textAlign">right</property>
-                                                    <property name="width">1in</property>
+                                                    <property name="width">0.95in</property>
                                                     <property name="resultSetColumn">RBS_MONTH_NAME</property>
                                                 </data>
                                             </property>
