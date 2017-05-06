@@ -325,7 +325,7 @@ AND account_id <> 15
             <property name="type">custom</property>
             <property name="orientation">landscape</property>
             <property name="height">210mm</property>
-            <property name="width">450mm</property>
+            <property name="width">1000mm</property>
         </simple-master-page>
     </page-setup>
     <body>
