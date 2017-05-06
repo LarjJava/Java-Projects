@@ -683,6 +683,7 @@ AND category_name <> 'Savings']]></xml-property>
         </simple-master-page>
     </page-setup>
     <body>
+        <data id="352"/>
         <extended-item extensionName="Crosstab" extensionVersion="3.7.0" id="4">
             <property name="cube">IncomeAndExpenditureDataCube</property>
             <property name="measures">
@@ -1276,6 +1277,5 @@ AND category_name <> 'Savings']]></xml-property>
                 </structure>
             </list-property>
         </extended-item>
-        <data id="352"/>
     </body>
 </report>

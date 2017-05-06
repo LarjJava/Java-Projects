@@ -678,6 +678,22 @@ select * from all_transactions_view where transaction_id = 198
 
 select * from TEXT_FILES_VARCHAR where account_id = '2' and date like '%2016'
 
+SELECT * FROM  all_transactions t
+WHERE t.description LIKE '%PAYPAL%NGOTT%35314369001%'
+
+select * from ACCOUNTS
+
+select * from all_transactions_view where account_id = 10
+
+select * from all_transactions
+where description like '%DEER%'
+
+select * from CATEGORY_MAP_VIEW
+
+select * from ALL_TRANSACTIONS
+where value = 1350
+
+
 
 
 

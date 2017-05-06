@@ -64,13 +64,13 @@
 2,Outgoings,Golf Fees,%DUDDINGSTON GC%
 2,Outgoings,Golf Fees,%LIBERTON GOLF CLUB 000%
 2,Outgoings,Golf Fees,%FAIRWAY CREDIT%
-3,Spend,Groceries/Petrol/Cash,%TESCO%
-3,Spend,Groceries/Petrol/Cash,%MORRISON%
-3,Spend,Groceries/Petrol/Cash,%ASDA%
-3,Spend,Groceries/Petrol/Cash,%SAINSBURYS%
-3,Spend,Groceries/Petrol/Cash,%Shell%
-3,Spend,Groceries/Petrol/Cash,,C/L
-3,Spend,Groceries/Petrol/Cash,,CPT
+3,Spend,Groceries/Petrol,%TESCO%
+3,Spend,Groceries/Petrol,%MORRISON%
+3,Spend,Groceries/Petrol,%ASDA%
+3,Spend,Groceries/Petrol,%SAINSBURYS%
+3,Spend,Groceries/Petrol,%Shell%
+3,Spend,Cash,,C/L
+3,Spend,Cash,,CPT
 3,Spend,Miscellaneous,,CHQ
 3,Spend,Miscellaneous,,PAY
 3,Spend,Miscellaneous,,DEB
@@ -149,6 +149,7 @@
 3,Spend,Miscellaneous,%PAYPAL%*AFO%
 3,Spend,Miscellaneous,%PAYPAL%*ME%
 3,Spend,Miscellaneous,%PAYPAL%4029357733%
+3,Spend,Miscellaneous,%PAYPAL%JOHNAIRDCOL%
 3,Spend,Miscellaneous,TONY MACARONI%
 3,Spend,Miscellaneous,OUTFIT EDINBURGH%
 3,Spend,Miscellaneous,W H SMITH%
