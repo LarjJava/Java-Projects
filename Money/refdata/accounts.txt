@@ -12,3 +12,4 @@
 15,Adjustments,,,Adjustments,Adjustments,
 16,RBS,,,Savings,RBS Pension Savings
 17,Cash,,,Savings,Cash
+18,YB,,5504501007673152,Debt,Yorkshire Credit Card,3075730614

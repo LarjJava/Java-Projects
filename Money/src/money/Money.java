@@ -43,6 +43,7 @@ public class Money
 		List<List<String>> contentOfAllBos2DataFiles = loadBos2DataFiles(prop.getProperty("bos2datafilepath"));
 		List<List<String>> contentOfAllBosCcDataFiles = loadBosCcDataFiles(prop.getProperty("bosccdatafilepath"));
 		List<List<String>> contentOfAllAmexDataFiles = loadAmexDataFiles(prop.getProperty("amexdatafilepath"));
+		List<List<String>> contentOfAllYbDataFiles = loadYbDataFiles(prop.getProperty("ybdatafilepath"));
 		List<List<String>> contentOfAllOtherDataFiles = loadOtherDataFiles(prop.getProperty("otherdatafilepath"));
 		List<List<String>> contentOfCategoriesFile = loadCategoriesTextFile(prop.getProperty("categoriesfile"));
 		List<List<String>> contentOfIgnoreTransFile = loadIgnoreTransTextFile(prop.getProperty("ignoretransfile"));
@@ -65,6 +66,7 @@ public class Money
 								   contentOfAllBos2DataFiles,
 								   contentOfAllBosCcDataFiles,
 								   contentOfAllAmexDataFiles,
+								   contentOfAllYbDataFiles,
 								   contentOfAllOtherDataFiles,
 								   contentOfCategoriesFile, 
 								   contentOfIgnoreTransFile,
@@ -224,6 +226,33 @@ public class Money
 	static List<List<String>> loadAmexDataFiles(String pAmexDataFilePath)
 	{
 		File dataFilePath = new File(pAmexDataFilePath);
+		String[] listOfDataFiles = dataFilePath.list();
+		List<String> contentOfAllDataFiles = new ArrayList<>();
+		
+		// Load transaction data files one at a time
+		for (int i=0; i < listOfDataFiles.length; i++)
+		{
+			String filename = dataFilePath.getPath() + "\\" + listOfDataFiles[i];
+			
+			try
+			{
+				contentOfAllDataFiles.addAll(loadTextFile(filename, i));
+			}
+			catch (IOException e)
+			{
+				System.out.println(e.getMessage());
+			}
+		}
+				
+		List<List<String>> contentOfAllDataFiles2D = convertTo2D(contentOfAllDataFiles);
+		
+		return contentOfAllDataFiles2D;
+	}
+	
+	// Load Yorkshire Bank Card transaction data text files
+	static List<List<String>> loadYbDataFiles(String pYbDataFilePath)
+	{
+		File dataFilePath = new File(pYbDataFilePath);
 		String[] listOfDataFiles = dataFilePath.list();
 		List<String> contentOfAllDataFiles = new ArrayList<>();
 		
@@ -664,6 +693,7 @@ public class Money
 										   List<List<String>> contentOfAllBos2DataFiles,
 										   List<List<String>> contentOfAllBosCcDataFiles,
 										   List<List<String>> contentOfAllAmexDataFiles,
+										   List<List<String>> contentOfAllYbDataFiles,
 										   List<List<String>> contentOfAllOtherDataFiles,
 										   List<List<String>> contentOfCategoriesFile,
 										   List<List<String>> contentOfIgnoreTransFile, 
@@ -859,6 +889,50 @@ public class Money
 			ps.setString(5,"AMX");
 			ps.setString(6,tableRow.get(5));
 			ps.setString(7,tableRow.get(4));
+			
+			ps.executeUpdate();
+		}
+		
+		for (List<String> tableRow : contentOfAllYbDataFiles)
+		{
+			String psString = "INSERT INTO text_files_varchar ("
+					        + "file_id, "
+					        + "line_id, "
+					        + "account_id, "	
+					        + "date, "
+					        + "type, "
+					        + "description, "
+					        + "value"
+					        + ") VALUES (?,?,?,?,?,?,?)";
+
+			PreparedStatement ps = dbConnection.prepareStatement(psString);
+
+			String ybDate = tableRow.get(2);
+			String ybDate2 = null;
+			String ybMonth = null;
+
+			if (ybDate.substring(3,6).equals("Jan")) ybMonth = "01";
+			if (ybDate.substring(3,6).equals("Feb")) ybMonth = "02";
+			if (ybDate.substring(3,6).equals("Mar")) ybMonth = "03";
+			if (ybDate.substring(3,6).equals("Apr")) ybMonth = "04";
+			if (ybDate.substring(3,6).equals("May")) ybMonth = "05";
+			if (ybDate.substring(3,6).equals("Jun")) ybMonth = "06";
+			if (ybDate.substring(3,6).equals("Jul")) ybMonth = "07";
+			if (ybDate.substring(3,6).equals("Aug")) ybMonth = "08";
+			if (ybDate.substring(3,6).equals("Sep")) ybMonth = "09";
+			if (ybDate.substring(3,6).equals("Oct")) ybMonth = "10";
+			if (ybDate.substring(3,6).equals("Nov")) ybMonth = "11";
+			if (ybDate.substring(3,6).equals("Dec")) ybMonth = "12";
+			
+			ybDate2 = ybDate.substring(0,3)+ybMonth+ybDate.substring(6);
+
+			ps.setString(1,tableRow.get(0));
+			ps.setString(2,tableRow.get(1));
+			ps.setString(3,"18");
+			ps.setString(4,ybDate2);
+			ps.setString(5,"YB");
+			ps.setString(6,tableRow.get(5));
+			ps.setString(7,tableRow.get(3));
 			
 			ps.executeUpdate();
 		}
@@ -1163,7 +1237,7 @@ public class Money
     			ps.setBigDecimal(8,rsBos.getBigDecimal("BALANCE"));
     			
     			ps.executeUpdate();
-    			                    
+    		  
     	        previousLineBalanceBos = currentLineBalanceBos;
     	        fileOk = true;
     		}
@@ -1294,6 +1368,58 @@ public class Money
     	}
         
         System.out.println("Amex Credit Card file ok? " + fileOk);
+        
+        // Populate all_transactions table with Yorkshire Credit Card transactions and check data integrity
+        firstLine = true;
+        BigDecimal previousLineBalanceYb = new BigDecimal(0);
+        BigDecimal currentLineBalanceYb = null;
+        BigDecimal currentLineValueYb = null;
+        
+        String queryYb = "SELECT * FROM text_files_type "
+        				  + "WHERE account_id = 18 "
+        				  + "ORDER BY date, line_id DESC, file_id";
+        
+        Statement statementYb = dbConnection.createStatement();
+	    ResultSet rsYb = statementYb.executeQuery(queryYb);
+	    
+        while (rsYb.next())
+        {
+        	currentLineValueYb = rsYb.getBigDecimal("VALUE");
+        	currentLineBalanceYb = currentLineValueYb.add(previousLineBalanceYb);
+				
+			String psString = "INSERT INTO all_transactions ("
+			        		+ "file_id, "
+					        + "line_id, "
+			        		+ "account_id, "
+					        + "date, "
+					        + "type, "
+					        + "description, "
+					        + "value, "
+					        + "balance "
+					        + ") VALUES (?,?,?,?,?,?,?,?)";
+			
+			PreparedStatement ps = dbConnection.prepareStatement(psString);
+			
+			ps.setInt(1,rsYb.getInt("FILE_ID"));
+			ps.setInt(2,rsYb.getInt("LINE_ID"));
+			ps.setInt(3,rsYb.getInt("ACCOUNT_ID"));
+			ps.setDate(4,rsYb.getDate("DATE"));
+			ps.setString(5,rsYb.getString("TYPE"));
+			ps.setString(6,rsYb.getString("DESCRIPTION"));
+			ps.setBigDecimal(7,rsYb.getBigDecimal("VALUE"));
+			ps.setBigDecimal(8,currentLineBalanceYb);
+			
+			ps.executeUpdate();
+			
+	        previousLineBalanceYb = currentLineBalanceYb;
+	        fileOk = true;
+
+	        // write code here to check for duplicate trans
+	        // if (!currentLineBalance.equals(previousLineBalance)) fileOk = false;
+
+    	}
+        
+        System.out.println("YB Credit Card file ok? " + fileOk);
         
         // Populate all_transactions table with category information
     	try

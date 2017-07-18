@@ -47,6 +47,7 @@
 2,Outgoings,EIS,EDUC INST OF SCOT%
 2,Outgoings,Dentist,PRACTICE PLAN%
 2,Outgoings,Dentist,%CRAIGENTINNY%DENTAL%
+2,Outgoings,Dentist,Dentist:%
 2,Outgoings,Life Insurance,LEGAL AND GEN%
 2,Outgoings,Life Insurance,AVIVA LIFE%
 2,Outgoings,Life Insurance,%CAVENDISHON%
@@ -69,6 +70,7 @@
 2,Outgoings,TV Subscriptions,%NOWTV%
 2,Outgoings,Car Maintenance,%MOTORS%
 2,Outgoings,Car Maintenance,%MACKINNON MOTOR%
+2,Outgoings,Car Maintenance,%NATIONAL TYRE%
 2,Outgoings,Osteopath,%OSTEOPAT%
 2,Outgoings,Bank Charges,,CHG
 2,Outgoings,Bank Charges,%LATE PAYMENT FEE%
@@ -78,6 +80,7 @@
 2,Outgoings,Golf Fees,%LIBERTON GOLF CLUB 000%
 2,Outgoings,Golf Fees,LIBERTON GOLF CLUB
 2,Outgoings,Golf Fees,%FAIRWAY CREDIT%
+2,Outgoings,Golf Fees,Golf Fees:%
 3,Spend,Groceries/Petrol,%TESCO%
 3,Spend,Groceries/Petrol,%MORRISO%
 3,Spend,Groceries/Petrol,%ASDA%
@@ -86,6 +89,7 @@
 3,Spend,Groceries/Petrol,%LIDL%
 3,Spend,Groceries/Petrol,%SERVICE STATI%
 3,Spend,Groceries/Petrol,%ALDI%
+3,Spend,Groceries/Petrol,SHELL%
 3,Spend,Groceries/Petrol,Groceries/Petrol:%
 3,Spend,Cash,,C/L
 3,Spend,Cash,,CPT
@@ -104,7 +108,10 @@
 3,Spend,Holiday,%UNITED AIR%
 3,Spend,Holiday,%HOTEL%
 3,Spend,Holiday,%HOMEAWAY%
+3,Spend,Holiday,%THOMASCOOK%
+3,Spend,Holiday,ETRAWLER%
 3,Spend,Home Improvements,%B AND Q%
+3,Spend,Home Improvements,%B & Q%
 3,Spend,Home Improvements,Home Improvements:%
 3,Spend,Home Improvements,%MORNINGSIDE%BATHROOMS%
 3,Spend,Home Improvements,%SM ELECTRICAL%
@@ -240,6 +247,22 @@
 3,Spend,Miscellaneous,%PAYPAL%JILLJAKETOD%
 3,Spend,Miscellaneous,%PAYPAL%SUNUP%
 3,Spend,Miscellaneous,%PAYPAL%RUE23%
+3,Spend,Miscellaneous,%PAYPAL%JUDEOPOGAH%
+3,Spend,Miscellaneous,%PAYPAL%SUEGALLON1%
+3,Spend,Miscellaneous,%PAYPAL%ONEBILLIONR%
+3,Spend,Miscellaneous,%PAYPAL%ANNAMARCHEW%
+3,Spend,Miscellaneous,%PAYPAL%BEXXACCOUNT%
+3,Spend,Miscellaneous,%PAYPAL%ETHELSMITH%
+3,Spend,Miscellaneous,%PAYPAL%NIKKILUKE77%
+3,Spend,Miscellaneous,%PAYPAL%SWEETCAROLI%
+3,Spend,Miscellaneous,%PAYPAL%CRIMSONUK%
+3,Spend,Miscellaneous,%PAYPAL%MYRUGSTORE%
+3,Spend,Miscellaneous,%PAYPAL%DEANSELBY%
+3,Spend,Miscellaneous,%PAYPAL%ANGELAJONES%
+3,Spend,Miscellaneous,%PAYPAL%MARJRICHARD%
+3,Spend,Miscellaneous,%PAYPAL%BLACKCATSCR%
+3,Spend,Miscellaneous,%PAYPAL%BARN OUTLET%
+3,Spend,Miscellaneous,%PAYPAL%XXX%
 3,Spend,Miscellaneous,TONY MACARONI%
 3,Spend,Miscellaneous,OUTFIT EDINBURGH%
 3,Spend,Miscellaneous,W H SMITH%
@@ -313,7 +336,7 @@
 3,Spend,Miscellaneous,D E GIBB%
 3,Spend,Miscellaneous,THE GYM%
 3,Spend,Miscellaneous,KINNAIRD PARK REP GLASGOW%
-3,Spend,Miscellaneous,FRANKIE AND BENNYS%
+3,Spend,Miscellaneous,%FRANKIE AND BENNYS%
 3,Spend,Miscellaneous,%IAIN SEATH%
 3,Spend,Miscellaneous,MAMMA ROMA%
 3,Spend,Miscellaneous,%MIDLOTHIAN LADIES%
@@ -323,6 +346,25 @@
 3,Spend,Miscellaneous,%ANNA THAI%
 3,Spend,Miscellaneous,%BOOTS%
 3,Spend,Miscellaneous,%GORDON NICOLSON%
+3,Spend,Miscellaneous,SUPERDRUG%
+3,Spend,Miscellaneous,M&S SIMPLY FOOD%
+3,Spend,Miscellaneous,Amazon UK Marketplace%
+3,Spend,Miscellaneous,BLACK BULL%
+3,Spend,Miscellaneous,SUPERCUTS%
+3,Spend,Miscellaneous,%OSCARS%
+3,Spend,Miscellaneous,PC WORLD%
+3,Spend,Miscellaneous,%SHANDON%
+3,Spend,Miscellaneous,AMZ%YEESUN%
+3,Spend,Miscellaneous,GIULIANOS%
+3,Spend,Miscellaneous,TIMPSON%
+3,Spend,Miscellaneous,INSPIRING ADVISERS%
+3,Spend,Miscellaneous,DALRIADA%
+3,Spend,Miscellaneous,STEAMGAMES%
+3,Spend,Miscellaneous,%WWW.GETTHE%
+3,Spend,Miscellaneous,SCOTT CLARK GOLF%
+3,Spend,Miscellaneous,THE PERFUME SHOP%
+3,Spend,Miscellaneous,BARRELHOUSE%
+3,Spend,Miscellaneous,Amazon Digital%
 3,Spend,Miscellaneous,%AMAZON%,MCC
 3,Spend,Miscellaneous,%Amazon%,MCC
 3,Spend,Miscellaneous,%PLAYSTATION%,MCC

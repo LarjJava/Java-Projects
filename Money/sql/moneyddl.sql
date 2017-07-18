@@ -691,7 +691,24 @@ where description like '%DEER%'
 select * from CATEGORY_MAP_VIEW
 
 select * from ALL_TRANSACTIONS
-where value = 1350
+where account_id = 2
+
+select * from text_files_varchar
+where account_id = '2'
+and date like '%05%2017'
+
+select * from text_files_type
+where account_id = 2
+and date > '05/01/2017'
+ORDER BY date, line_id DESC, file_id
+
+SELECT * FROM text_files_type WHERE account_id = 2 ORDER BY date, line_id DESC, file_id
+
+
+
+
+
+
 
 
 
